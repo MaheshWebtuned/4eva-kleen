@@ -1,0 +1,485 @@
+/* ======= Typography style ======= */
+:root {
+    --primary-blue: #032349;
+    --secondary-blue: #282982;
+    --light-blue: #6985E5;
+    --text-color: #3d3d3d;
+    --white: #FFF;
+    --black: #000000;
+    --bg-white: #F9F9F9;
+}
+
+
+
+
+
+
+html,
+body {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    height: 100%;
+    width: 100%;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    list-style: none;
+    word-wrap: break-word;
+}
+
+body {
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.95em;
+    color: var(--gray);
+    overflow-x: hidden !important;
+    background: var(--white);
+    overflow-x: hidden;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* BreadCrumb Section */
+.breadcrumb-box {
+    position: relative;
+    background: url('../img/services/i1.jpg') center center / cover no-repeat;
+    width: 100%;
+    padding: clamp(4rem, 10vw, 8rem) 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    margin-top: clamp(30px, 10vh, 100px);
+}
+
+.breadcrumb-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.breadcrumb-content {
+    max-width: 900px;
+}
+
+
+.breadcrumb-content>* {
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb-content h1 {
+    text-transform: uppercase;
+    font-size: clamp(35px, 6vw, 55px);
+}
+
+.breadcrumb-content p {
+    text-transform: uppercase;
+    font-size: 16px;
+    color: var(--white);
+}
+
+.breadcrumb-content a {
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px 20px;
+    margin: 5px 5px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #012e5b 40%, #496bff 100%);
+}
+
+.breadcrumb-content span {
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    color: var(--white);
+    padding: 10px 20px;
+    margin: 5px 5px;
+    border-radius: 50px;
+    background: linear-gradient(135deg, #012e5b 40%, #496bff 100%);
+}
+
+
+@media (max-width:945px) {
+    .breadcrumb-content {
+        max-width: 900px;
+        margin-top: 40px;
+    }
+}
+
+/* BreadCrumb Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ======= Our Service SECTION ======= */
+
+.bci-services-section {
+    background: var(--white);
+}
+
+/* HEADER */
+.bci-services-header {
+    background: transparent;
+    color: var(--secondary-blue);
+}
+
+.bci-services-header h2 {
+    letter-spacing: 1px;
+    color: var(--secondary-blue);
+    font-weight: 500;
+    margin: 0px;
+}
+
+.bci-services-header h2 span {
+    color: var(--light-blue);
+}
+
+.bci-services-header p {
+    font-size: 20px;
+    color: var(--black);
+}
+
+/* CARD */
+.bci-service-card {
+    background: #fff;
+    border-radius: 22px;
+    padding: 18px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.bci-service-card:hover {
+    transform: translateY(-8px);
+}
+
+.bci-service-card img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* CARD BODY */
+.bci-service-card .bci-card-body {
+    padding: 20px 10px 10px;
+}
+
+.bci-service-card h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--light-blue);
+    border-bottom: 2px solid var(--secondary-blue);
+    display: inline-block;
+    padding-bottom: 4px;
+}
+
+.bci-service-card p {
+    font-size: 16px;
+    margin: 15px 0;
+    color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .bci-services-header {
+        padding-top: 140px;
+    }
+
+    .bci-services-container {
+        margin-top: -120px;
+    }
+}
+
+/* ======= Our Service SECTION ======= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= SERVICE CTA ================= */
+
+.service-container {
+    position: relative;
+    padding: 60px;
+    overflow: hidden;
+
+    background-image: url("../img/work\ \(5\).jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 50px;
+}
+
+.service-container::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    pointer-events: none;
+}
+
+.service-cta-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.service-cta-content h2 {
+    color: var(--white);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.additional-service-section .container {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: var(--light-black);
+}
+
+/* MAIN CARD */
+.additional-service {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 10px;
+    text-decoration: none;
+    transition: transform .3s ease;
+}
+
+/* Keep alignment on hover */
+.additional-service:hover {
+    transform: scale(1.04);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.additional-service:hover .additional-service-list {
+    background-color: var(--white);
+}
+
+
+/* ICON WRAPPER */
+.additional-service-list {
+    width: 80px;
+    height: 80px;
+    background-color: var(--black);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(255, 255, 255, 0.2);
+}
+
+.additional-service-list img {
+    width: 60px;
+    height: 60px;
+}
+
+
+/* TEXT (your selector was wrong earlier) */
+.additional-service p {
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: 600;
+    color: var(--white);
+    margin: 0;
+}
+
+/* TITLE */
+.additional-service-title {
+    font-size: 50px;
+    font-family: "Oswald", sans-serif;
+    color: var(--white);
+    margin-bottom: 15px;
+    line-height: 1.2;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.additional-service-title span {
+    color: var(--secondary-blue);
+}
+
+
+@media (max-width:575.9px) {
+    .additional-service-section .container {
+        border-radius: 0px;
+    }
+
+}
+
+
+
+
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+    .service-container {
+        background-attachment: scroll;
+    }
+
+    .service-cta {
+        padding: 60px 12px;
+    }
+
+    .service-container {
+        padding: 30px;
+    }
+
+    .service-cta-content {
+        width: 100%;
+    }
+
+    .service-cta-content h2 {
+        font-size: 1.6rem;
+    }
+}
+
+
+/* ================= SERVICE CTA ================= */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================= WHY CHOOSE US SECTION ================= */
+.service-process-step {
+    padding: 20px;
+}
+
+
+.service-process-step-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0px;
+}
+
+
+
+.service-process-step-icon {
+    padding: 10px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: var(--light-black);
+    text-align: center;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+.service-process-step img {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.service-process-step h5 {
+    text-align: center;
+}
+
+.service-process-step p {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+
+.botton-link {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.service-process-step-content:hover .service-process-step-icon {
+    background-color: var(--secondary-blue);
+    transform: scale(1.05);
+}
+
+@media (max-width:767px) {
+    .content {
+        text-align: center;
+    }
+}
+
+/* ================= WHY CHOOSE US SECTION ================= */
