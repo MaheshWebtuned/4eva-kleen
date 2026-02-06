@@ -1097,12 +1097,12 @@ hr {
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  color: var(--color-primary);
+  color: var(--pink);
 }
 
 
 .navbar .navbar-nav .active {
-  color: var(--color-primary) !important;
+  color: var(--pink) !important;
   font-weight: 400;
   background-color: var(--bg-white);
   padding: 10px 15px;
@@ -1154,7 +1154,7 @@ a.logo {
 }
 
 .nav-scroll .navbar-nav .active {
-  color: var(--secondary-blue);
+  color: var(--pink);
   font-weight: 400;
 }
 
@@ -1225,7 +1225,7 @@ a.logo {
 }
 
 .nav-scroll .navbar-nav .active i {
-  color: var(--secondary-blue);
+  color: var(--pink);
 }
 
 .navbar .dropdown-menu {
@@ -1258,7 +1258,7 @@ a.logo {
 .navbar .dropdown-menu .dropdown:hover>.dropdown-item,
 .navbar .dropdown-menu .dropdown-item.active,
 .navbar .dropdown-menu .dropdown-item:hover {
-  color: var(--secondary-blue);
+  color: var(--pink);
   font-weight: 400;
 
 }
@@ -1342,7 +1342,6 @@ a.logo {
 }
 
 .navbar .navbar-right .wrap .text h5 {
-  font-family: "Outfit", sans-serif;
   font-size: 17px;
   font-weight: 300;
   color: var(--white);
@@ -1355,15 +1354,6 @@ a.logo {
   transition: all 500ms ease;
 }
 
-.navbar .navbar-right .wrap .text h5 a:hover {
-  color: var(--secondary-blue);
-}
-
-.nav-scroll .navbar-right .wrap .text p,
-.nav-scroll .navbar-right .wrap .text h5,
-.nav-scroll .navbar-right .wrap .text h5 a {
-  color: var(--white);
-}
 
 .navbar .dropdown-menu .dropdown-item.active {
   color: #0193CA !important;
@@ -2115,11 +2105,12 @@ a.logo {
 }
 
 /* Responsive: below 992px intro box collapses naturally */
-@media (max-width: 991px) {
+@media (max-width: 991.9px) {
   .service-intro-box {
     height: fit-content;
-    /* collapse */
+    margin-bottom: 20px;
   }
+
 
   .service-intro {
     height: auto;
@@ -2267,7 +2258,6 @@ a.logo {
 
 .hero-why-choose-us-section {
   position: relative;
-  /* important for ::before positioning */
   background-image: url("../img/professional-carpet-cleaning2.webp");
   background-size: cover;
   background-position: center;
@@ -2360,12 +2350,6 @@ a.logo {
   background-color: var(--gray-bg);
 }
 
-.section-title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #212529;
-}
-
 
 .testimonial-card {
   background: var(--white);
@@ -2424,119 +2408,96 @@ a.logo {
 
 /* FAQs Accordian Section */
 
-.faq-section {
-  background-color: var(--light-blue);
+.faq-container {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 0px 10px;
 }
 
-
-
-
-.faq-section-title {
-  text-align: center;
-  color: var(--secondary-blue);
-}
-
-
-
-.faq-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 10px;
-}
 
 .faq-item {
-  background: linear-gradient(135deg,
-      #001a33 0%,
-      #003366 40%,
-      #00509e 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  margin: 10px 0px;
 
-  border-radius: 16px;
-  padding: 18px 20px;
 }
 
 .faq-question {
-  width: 100%;
-  background: none;
+  background: var(--navy);
   border: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-weight: 600;
+  width: 100%;
+  text-align: left;
+  padding: 18px 20px;
   font-size: 18px;
+  font-weight: 500;
   cursor: pointer;
-  color: var(--white);
-}
-
-.faq-question:hover {
-  color: var(--white);
-}
-
-
-.faq-icon {
-  width: 34px;
-  height: 34px;
-  background: var(--white);
-  color: var(--secondary-blue);
-  border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  transition: transform 0.3s ease;
-  padding: 5px;
-}
-
-.faq-icon i {
-  font-size: 25px;
-  border-radius: 50%;
+  justify-content: space-between;
+  color: var(--gray-bg);
+  transition: background 0.3s ease;
 }
 
 
 .faq-answer {
-  overflow: hidden;
   max-height: 0;
-  transition: max-height 0.4s ease;
-  color: var(--gray);
-  font-size: 16px;
+  overflow: hidden;
+  background: var(--gray-bg);
+  transition: all 0.4s ease;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 300;
   line-height: 1.6;
-  margin-top: 10px;
+  color: var(--text);
 }
 
-/* ACTIVE */
 .faq-item.active .faq-answer {
   max-height: 300px;
+  padding: 15px 20px;
+}
+
+.faq-icon {
+  font-size: 20px;
+  transition: transform 0.3s ease;
 }
 
 .faq-item.active .faq-icon {
-  transform: rotate(135deg);
+  transform: rotate(45deg);
 }
 
 
-@media (max-width: 992px) {
 
-  .faq-section-row {
+
+
+.faq-intro {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gray-bg);
+}
+
+.faq-intro-box {
+  border-radius: 20px;
+  margin: 20px 0px;
+}
+
+
+
+@media (max-width:991.9px) {
+  .faq-section .row {
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+  }
+
+  .faq-intro {
+    margin-bottom: 20px;
   }
 
 }
 
 
-@media (max-width: 768px) {
-
-  .faq-container {
-    padding: 10px;
-  }
-
-  .faq-section-row {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-
-
-}
 
 /* FAQs Accordian Section */
 
@@ -2571,7 +2532,7 @@ a.logo {
 .over-footer-contain {
   text-align: center;
   letter-spacing: 1.2px;
-  font-size: clamp(14px, 2vw, 25px);
+  font-size: clamp(18px, 2vw, 30px);
   font-weight: 400;
   color: var(--white);
 }
@@ -2784,12 +2745,6 @@ a.logo {
   padding: 90px 0 20px 0;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-
-.footer .top .item .logo,
-.footer .bottom .logo {
-  width: 200px;
-  margin-bottom: 15px;
 }
 
 
