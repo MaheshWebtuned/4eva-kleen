@@ -2162,6 +2162,9 @@ a.logo {
 
 /* ======= GALLERY SECTION ======= */
 
+.hero-gallery-section {
+  padding-top: 0px;
+}
 
 .mansory-gallery {
   display: flex;
@@ -2233,7 +2236,6 @@ a.logo {
   height: var(--slideHeight);
   background-color: transparent;
   margin: auto;
-  margin-bottom: 80px;
 }
 
 .slider .slides-track {
@@ -2393,9 +2395,6 @@ a.logo {
 
 @media (max-width:767px) {
 
-  .hero-why-choose-us-section {
-    padding: 10px;
-  }
 
   .why-choose {
     border-radius: 20px;
@@ -2508,7 +2507,7 @@ a.logo {
 
 
 .service-section {
-  padding: 60px 20px;
+  padding-top: 0px;
 }
 
 
@@ -2630,9 +2629,6 @@ a.logo {
 
 /* Mobile Styles */
 @media (max-width: 767px) {
-  .service-section {
-    padding: 40px 15px;
-  }
 
   .section-title {
     font-size: 28px;
@@ -2798,6 +2794,7 @@ a.logo {
 
 .faq-section {
   position: relative;
+  padding-top: 0px;
 }
 
 .faq-section::before {
@@ -2963,6 +2960,7 @@ a.logo {
 .over-footer-contain {
   text-align: left;
   letter-spacing: 1.2px;
+  font-family: 'Boldonse', sans-serif;
   font-size: clamp(16px, 2vw, 30px);
   font-weight: 400;
   color: var(--white);
@@ -3158,7 +3156,7 @@ a.logo {
 
 .footer {
   position: relative;
-  background: #0b205c;
+  background: var(--dark-blue);
   overflow-x: hidden;
 }
 
@@ -3187,8 +3185,9 @@ a.logo {
 
 .footer .top .item h3 {
   color: var(--white);
-  font-size: 22px;
-  font-weight: 500;
+  font-family: 'Boldonse', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 2px;
 }
@@ -3197,6 +3196,7 @@ a.logo {
 
 .footer .top .item p {
   color: var(--white);
+  font-family: 'Roboto Flex', sans-serif;
   font-size: 16px;
   font-weight: 300;
 }
@@ -3255,6 +3255,13 @@ a.logo {
   border-radius: 50px;
 }
 
+.footer .top .social-icons i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .footer .top .social-icons .list-inline {
   margin: 0;
 }
@@ -3287,6 +3294,7 @@ a.logo {
 
 .footer .bottom p {
   color: var(--white);
+  font-family: 'Roboto Flex', sans-serif;
   font-size: 14px;
   font-weight: 300;
 }
