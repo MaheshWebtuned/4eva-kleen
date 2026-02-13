@@ -71,6 +71,9 @@ $(function () {
         }
     });
 
+
+
+
     // Close navbar-collapse when a clicked
     $(".navbar-nav .dropdown-item a").on('click', function () {
         $(".navbar-collapse").removeClass("show");
@@ -83,6 +86,12 @@ $(function () {
             navMain.collapse('hide');
         });
     });
+
+
+
+
+
+
 
     // Sections background image from data background
     var pageSection = $(".bg-img, section");
@@ -163,6 +172,13 @@ $(function () {
 
 
 
+    // Home services indicator
+
+
+    // Home services indicator
+
+
+
 
 
 
@@ -233,28 +249,199 @@ $(function () {
 
 
 
-    // Isotope Active Masonry Gallery
-    $('.gallery-items').imagesLoaded(function () {
-        // Add isotope on click filter function
-        $('.gallery-filter li').on('click', function () {
-            $(".gallery-filter li").removeClass("active");
-            $(this).addClass("active");
-            var selector = $(this).attr('data-filter');
-            $(".gallery-items").isotope({
-                filter: selector,
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear',
-                    queue: false,
-                }
+
+
+
+
+
+
+    // HOME SERVICES SECTION
+
+
+        // Desktop hover effect
+        if (window.innerWidth > 767) {
+            const serviceItems = document.querySelectorAll('.service-item');
+            const serviceImages = document.querySelectorAll('.service-image');
+
+            serviceItems.forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    const imageType = this.getAttribute('data-image');
+
+                    serviceImages.forEach(img => {
+                        img.classList.remove('active');
+                    });
+
+                    const targetImage = document.querySelector(`.service-image[data-service="${imageType}"]`);
+                    if (targetImage) {
+                        targetImage.classList.add('active');
+                    }
+
+                    serviceItems.forEach(si => si.classList.remove('active'));
+                    this.classList.add('active');
+                });
             });
-            return false;
+        } else {
+            // Mobile click to show/hide image
+            const serviceItems = document.querySelectorAll('.service-item');
+            const mobileImages = document.querySelectorAll('.mobile-image');
+
+            serviceItems.forEach((item, index) => {
+                item.addEventListener('click', function (e) {
+                    e.preventDefault();
+
+                    const mobileImg = document.getElementById(`mobile-img-${index}`);
+                    const isVisible = mobileImg.style.display === 'block';
+
+                    // Hide all images first
+                    mobileImages.forEach(img => {
+                        img.style.display = 'none';
+                        img.classList.remove('show');
+                    });
+
+                    if (!isVisible) {
+                        // Show the clicked image
+                        mobileImg.style.display = 'block';
+                        setTimeout(() => {
+                            mobileImg.classList.add('show');
+                        }, 10);
+
+                        // Redirect after showing image
+                        setTimeout(() => {
+                            window.location.href = this.getAttribute('href');
+                        }, 1200);
+                    } else {
+                        // If already visible, just redirect
+                        window.location.href = this.getAttribute('href');
+                    }
+                });
+            });
+        }
+
+        // Handle window resize
+        let resizeTimer;
+        window.addEventListener('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                location.reload();
+            }, 250);
         });
-        $(".gallery-items").isotope({
-            itemSelector: '.single-item',
-            layoutMode: 'masonry',
+
+
+
+    // HOME SERVICES SECTION
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // GALLERY PAGE SECTION
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+
+        const images = document.querySelectorAll(".gallery-img");
+        const modal = document.getElementById("lightbox-modal");
+        const modalBody = modal.querySelector(".lightbox-content");
+        const bsModal = new bootstrap.Modal(modal);
+
+        const btnEnlarge = document.querySelector(".btn-fullscreen-enlarge");
+        const btnExit = document.querySelector(".btn-fullscreen-exit");
+
+        function buildCarousel(startIndex) {
+            let slides = "";
+            let indicators = "";
+
+            images.forEach((img, i) => {
+                slides += `
+        <div class="carousel-item ${i === startIndex ? "active" : ""}">
+          <img src="${img.src}" class="d-block w-100 img-fluid">
+        </div>`;
+
+                indicators += `
+        <button type="button"
+          data-bs-target="#lightboxCarousel"
+          data-bs-slide-to="${i}"
+          class="${i === startIndex ? "active" : ""}">
+        </button>`;
+            });
+
+            modalBody.innerHTML = `
+      <div id="lightboxCarousel" class="carousel slide carousel-fade">
+        <div class="carousel-indicators">${indicators}</div>
+        <div class="carousel-inner">${slides}</div>
+
+        <button class="carousel-control-prev"
+          type="button"
+          data-bs-target="#lightboxCarousel"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next"
+          type="button"
+          data-bs-target="#lightboxCarousel"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>`;
+        }
+
+        images.forEach((img, index) => {
+            img.addEventListener("click", () => {
+                buildCarousel(index);
+                bsModal.show();
+
+                // 🔥 IMPORTANT: init carousel AFTER modal opens
+                modal.addEventListener("shown.bs.modal", () => {
+                    const carouselEl = document.getElementById("lightboxCarousel");
+                    new bootstrap.Carousel(carouselEl);
+                }, { once: true });
+            });
         });
+
+        btnEnlarge.addEventListener("click", () => {
+            modal.requestFullscreen();
+            btnEnlarge.classList.add("d-none");
+            btnExit.classList.remove("d-none");
+        });
+
+        btnExit.addEventListener("click", () => {
+            document.exitFullscreen();
+            btnExit.classList.add("d-none");
+            btnEnlarge.classList.remove("d-none");
+        });
+
     });
+
+    // GALLERY PAGE SECTION
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -296,6 +483,9 @@ $(function () {
     $(function () {
         contentWayPoint();
     });
+
+
+
 
 
 
@@ -444,49 +634,14 @@ class HeroCarousel {
 
 
 
+
+
+
+
 // Initialize carousel
 document.addEventListener('DOMContentLoaded', () => {
     new HeroCarousel();
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// HOME PAGE REVIEW SECTION JS
-
-const carousel = document.getElementById('reviewCarousel');
-const progressBar = document.getElementById('progressBar');
-
-const bsCarousel = new bootstrap.Carousel(carousel, {
-    interval: 10000,
-    ride: 'carousel'
-});
-
-function resetProgress() {
-    progressBar.style.transition = 'none';
-    progressBar.style.width = '0%';
-    setTimeout(() => {
-        progressBar.style.transition = 'width 10s linear';
-        progressBar.style.width = '100%';
-    }, 50);
-}
-
-// Initialize progress bar
-resetProgress();
-
-// Reset progress on slide change
-carousel.addEventListener('slide.bs.carousel', resetProgress);
-
 
 
 

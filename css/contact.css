@@ -3,7 +3,7 @@
     --primary-blue: #032349;
     --secondary-blue: #282982;
     --light-blue: #6985E5;
-    --text-color: #3d3d3d;
+    --text-gray-color: #3d3d3d;
     --white: #FFF;
     --black: #000000;
     --bg-white: #F9F9F9;
@@ -184,7 +184,7 @@ body {
 .contact-description {
     font-size: 16px;
     line-height: 1.8;
-    color: var(--text-color);
+    color: var(--text-gray-color);
     margin-bottom: 50px;
 }
 
@@ -207,7 +207,7 @@ body {
 
 .info-content {
     font-size: 16px;
-    color: var(--text-color);
+    color: var(--text-gray-color);
     line-height: 1.6;
 }
 
@@ -250,7 +250,6 @@ body {
 .form-label span {
     font-size: 16px;
     font-weight: 500;
-    color: red;
     display: block;
     padding-left: 5px;
     text-transform: capitalize;

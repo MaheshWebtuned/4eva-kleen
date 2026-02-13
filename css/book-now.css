@@ -1,12 +1,12 @@
 /* ======= Typography style ======= */
 :root {
-    --pink: #E94290;
-    --blue: #63B7F1;
-    --navy: #0F1C2E;
+    --primary-pink: #E94290;
+    --secondary-blue: #63B7F1;
+    --secondary-blue: #0F1C2E;
     --white: #FFFFFF;
-    --gray-bg: #F5F8FC;
-    --border: #E6ECF2;
-    --text: #6b7280;
+    --light-gray: #F5F8FC;
+    --light-gray: #E6ECF2;
+    --text-gray: #6b7280;
 
 }
 
@@ -35,7 +35,7 @@ body {
 
 body {
     font-family: "Inter", sans-serif;
-    color: var(--text);
+    color: var(--text-gray);
     background: var(--white);
     font-size: 16px;
     overflow-x: hidden;
@@ -144,7 +144,7 @@ body {
 /* How It Works Section */
 .booking-process {
     padding: 100px 0;
-    background: var(--gray-bg);
+    background: var(--light-gray);
 }
 
 .steps-container {
@@ -170,7 +170,7 @@ body {
 
 .step-card i {
     font-size: 2.5rem;
-    color: var(--text);
+    color: var(--text-gray);
     margin-bottom: 1.5rem;
     opacity: 0.9;
 }
@@ -181,7 +181,7 @@ body {
     right: 20px;
     width: 32px;
     height: 32px;
-    background: var(--blue);
+    background: var(--secondary-blue);
     color: white;
     border-radius: 50%;
     line-height: 32px;
@@ -193,12 +193,12 @@ body {
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
 }
 
 .step-card p {
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: var(--text-gray-secondary);
     margin: 0;
     line-height: 1.5;
 }
@@ -245,7 +245,7 @@ body {
     gap: 1rem;
     font-size: 1.25rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
 }
 
 .service-icon {
@@ -270,7 +270,7 @@ body {
     display: none;
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--light-gray-color);
     animation: slideDown 0.3s ease;
 }
 
@@ -309,19 +309,19 @@ body {
 }
 
 .price-item:hover {
-    border-color: var(--border-color);
+    border-color: var(--light-gray-color);
     background: white;
 }
 
 .price-label {
     font-weight: 500;
-    color: var(--text-secondary);
+    color: var(--text-gray-secondary);
     font-size: 0.9rem;
 }
 
 .price-value {
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
     font-size: 1rem;
 }
 
@@ -339,7 +339,7 @@ body {
 
 .addon-item:hover {
     background: white;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--light-gray-color);
     padding: calc(1rem - 1px);
 }
 
@@ -354,7 +354,7 @@ body {
     cursor: pointer;
     margin: 0;
     font-size: 0.95rem;
-    color: var(--text-secondary);
+    color: var(--text-gray-secondary);
 }
 
 /* Form Sections */
@@ -386,7 +386,7 @@ body {
 
 .form-section h3 {
     margin-bottom: 2rem;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
     font-size: 1.5rem;
     font-weight: 700;
     display: flex;
@@ -395,7 +395,7 @@ body {
 }
 
 .form-section h3 i {
-    color: var(--blue);
+    color: var(--secondary-blue);
 }
 
 .form-group {
@@ -406,7 +406,7 @@ body {
     display: block;
     margin-bottom: 0.625rem;
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
     font-size: 0.9rem;
 }
 
@@ -419,7 +419,7 @@ body {
     font-size: 0.95rem;
     transition: all 0.2s ease;
     background: white;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
 }
 
 
@@ -431,7 +431,7 @@ body {
 }
 
 .form-control::placeholder {
-    color: var(--text-muted);
+    color: var(--text-gray-muted);
 }
 
 
@@ -448,7 +448,7 @@ body {
 }
 
 .price-summary h4 {
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
     margin-bottom: 2rem;
     font-size: 1.25rem;
     font-weight: 700;
@@ -458,14 +458,14 @@ body {
 }
 
 .price-summary h4 i {
-    color: var(--blue);
+    color: var(--secondary-blue);
 }
 
 .summary-item {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
-    border-bottom: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--light-gray-color);
     font-size: 0.95rem;
 }
 
@@ -474,21 +474,21 @@ body {
 }
 
 .summary-item span:first-child {
-    color: var(--text-secondary);
+    color: var(--text-gray-secondary);
 }
 
 .summary-item span:last-child {
     font-weight: 600;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
 }
 
 .summary-total {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    border-top: 2px solid var(--border-color);
+    border-top: 2px solid var(--light-gray-color);
 }
 
 .summary-total span:last-child {
@@ -512,7 +512,7 @@ body {
     padding: 1rem;
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    border-top: 1px solid var(--border-color);
+    border-top: 1px solid var(--light-gray-color);
 }
 
 /* Confirmation Message */
@@ -537,37 +537,37 @@ body {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
 }
 
 .confirmation-message .lead {
     font-size: 1.125rem;
-    color: var(--text-secondary);
+    color: var(--text-gray-secondary);
     margin-bottom: 2rem;
 }
 
 .confirmation-message .bg-light {
     background: var(--bg-secondary) !important;
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--light-gray-color);
 }
 
 .alert-note {
     background: linear-gradient(to right, rgba(59, 130, 246, 0.05), rgba(59, 130, 246, 0.02));
-    border-left: 3px solid var(--gray-bg);
+    border-left: 3px solid var(--light-gray);
     padding: 1rem 1.25rem;
     margin-top: 1rem;
     border-radius: 8px;
     font-size: 0.9rem;
-    color: var(--text-secondary);
+    color: var(--text-gray-secondary);
 }
 
 .alert-note i {
-    color: var(--gray-bg);
+    color: var(--light-gray);
     margin-right: 0.5rem;
 }
 
 .alert-note strong {
-    color: var(--text);
+    color: var(--text-gray);
 }
 
 .section-header {
@@ -578,14 +578,14 @@ body {
 .section-header h2 {
     font-size: 2.5rem;
     font-weight: 700;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
 }
 
 .section-header p {
     font-size: 1.125rem;
-    color: var(--text-secondary);
+    color: var(--text-gray-secondary);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -615,8 +615,8 @@ body {
 /* Button Styles */
 .btn-outline-secondary {
     border: 1px solid gainsboro;
-    color: var(--text-secondary);
-    background: var(--gray-bg);
+    color: var(--text-gray-secondary);
+    background: var(--light-gray);
     padding: 14px 32px;
     border-radius: 12px;
     font-weight: 600;
@@ -625,7 +625,7 @@ body {
 
 .btn-outline-secondary:hover {
     border: 1px solid gainsboro;
-    color: var(--text-primary);
+    color: var(--text-gray-primary);
     background: var(--white);
 
 }
@@ -646,7 +646,7 @@ body {
 }
 
 .text-muted {
-    color: var(--text-muted) !important;
+    color: var(--text-gray-muted) !important;
     font-size: 0.875rem;
 }
 
@@ -657,7 +657,7 @@ small.text-muted {
 
 .btn-primary-custom {
     border: 1px solid gainsboro;
-    color: var(--text-secondary);
+    color: var(--text-gray-secondary);
     background: white;
     padding: 14px 32px;
     border-radius: 12px;
@@ -668,8 +668,8 @@ small.text-muted {
 
 .btn-primary-custom:hover {
     border: 1px solid gainsboro;
-    color: var(--text-primary);
-    background: var(--gray-bg);
+    color: var(--text-gray-primary);
+    background: var(--light-gray);
 }
 
 

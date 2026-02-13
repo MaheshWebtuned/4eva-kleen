@@ -3,7 +3,7 @@
     --primary-blue: #032349;
     --secondary-blue: #282982;
     --light-blue: #6985E5;
-    --text-color: #3d3d3d;
+    --text-gray-color: #3d3d3d;
     --white: #FFF;
     --black: #000000;
     --bg-white: #F9F9F9;
@@ -738,7 +738,7 @@ body {
 
 .step-description {
     font-size: 0.95rem;
-    color: var(--text-color);
+    color: var(--text-gray-color);
     line-height: 1.6;
     max-width: 260px;
     margin: 0 auto;

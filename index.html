@@ -30,9 +30,19 @@
 
 
 
-    <!-- Google Fonts: Oswald & Outfit families with multiple weights -->
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap" />
+    <!-- Google 'SN Pro', sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap"
+        rel="stylesheet">
+
+
+    <!-- Google 'Poppins', sans-serif -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+
 
 
 
@@ -47,8 +57,10 @@
     <link rel="stylesheet" href="css/animation.css">
 
 
-    <!-- Themify Icons (icon font library) -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ti-icons@0.1.2/css/themify-icons.min.css" />
+    <!-- bootstrap Icons (icon library) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
 
     <!-- Font Awesome (icon library, v6.6.0) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -90,13 +102,13 @@
 
     <div class="nav-banner py-2 px-3">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8 text-center mb-lg-0">
+            <div class="row ">
+                <div class="col-md-8 nav-banner-txt">
                     Welcome to 4EVA Kleen - Honest | Professional | Affordable
                 </div>
 
-                <div class="col-md-4 d-none d-md-block text-center">
-                    <a href="tel:0423646427"> <i class="fa-solid fa-phone-volume"></i> <span> +0423646427</span> </a>
+                <div class="col-md-4 d-none d-md-block nav-banner-call">
+                    <a href="tel:0423646427"> <i class="bi bi-telephone"></i> <span> 0423646427</span> </a>
                 </div>
             </div>
         </div>
@@ -124,9 +136,8 @@
             <!-- Logo -->
             <div class="logo-wrapper">
                 <a class="logo" href="index.html">
-                    <img src="img/logo.png" class="logo-img" alt="" />
+                    <img src="img/logo.png" class="logo-img img-fluid" alt="" />
                 </a>
-                <!-- <a class="logo" href="index"><div class="logo"><img src="img/logo.png" alt=""></div></a> -->
             </div>
 
             <!-- Button -->
@@ -139,18 +150,18 @@
             <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
 
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Services</a>
+                            aria-expanded="false">Services <i class="fa-solid fa-angle-down"></i></a>
 
                         <ul class="dropdown-menu">
 
@@ -181,7 +192,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
                         <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
 
@@ -193,9 +204,7 @@
                         <a class="nav-link" href="faq.html">FAQs</a>
                     </li>
 
-
-
-                    <li class="nav-item navigation-button">
+                    <li class="nav-item navigation-button d-none d-lg-block">
                         <a href="book-now.html" class="button-1"> Book Now</a>
                     </li>
 
@@ -312,6 +321,174 @@
 
 
     <!--============================
+            INTRO SECTION 
+  ==============================-->
+
+    <section class="intro-section section-padding">
+        <div class="container">
+            <div class="row">
+
+
+                <div class="col-12 col-lg-7">
+
+                    <div class="sec-title text-left animate-top pb-4">
+                        <div class="sub-title"> <img src="img/mop.png" alt=""> About 4Eva Kleen</div>
+                        <h2> We provide wide range of <span>cleaning services</span></h2>
+                    </div>
+
+
+                    <div class="intro-txt">
+
+                        <p>4Eva Kleen is a trusted, family-owned cleaning service specialising in professional carpet
+                            steam cleaning, upholstery steam cleaning, tile and grout cleaning, window cleaning, and
+                            end-of-lease cleaning. Based in Perth, we are committed to delivering high-quality cleaning
+                            solutions for residential and commercial properties using professional equipment and proven
+                            cleaning techniques designed to refresh, restore, and maintain your surfaces.
+                        </p>
+                        <p>
+                            As a family-run business, 4Eva Kleen takes pride in providing reliable and honest cleaning
+                            services while building long-term relationships with our clients. We understand that every
+                            property is different, which is why we focus on attention to detail and customer
+                            satisfaction in every job we complete. If our service does not meet your expectations, we
+                            stand behind our work and will return to address any concerns. Our goal is to provide
+                            consistent, thorough, and dependable cleaning services that clients can trust.
+                        </p>
+
+
+                    </div>
+
+                    <div class="text-left mt-2 animate-bottom">
+                        <a href="about.html" class="button-2"> Read More </a>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-lg-5">
+
+                    <img src="img/owner-bg.png" alt="">
+
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!--============================
+            INTRO SECTION 
+  ==============================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--============================
+            Featured SECTION 
+  ==============================-->
+
+
+    <section class="featured-section section-padding">
+        <div class="container featured-container">
+            <div class="row ">
+
+                <div class="col-12 col-lg-4 ps-3 pe-3 pb-3">
+                    <div class="featured-card">
+                        <div class=" featured-card-title">
+                            <div class="featured-card-h3">
+                                <h3>Honest</h3>
+                            </div>
+                            <div class="featured-card-icon"><img src="img/honesty.png" alt="icon">
+                            </div>
+                        </div>
+                        <div class="featured-card-info">
+                            <p>
+                                4EVA Kleen is known for its honest cleaning services, built on clear pricing and
+                                transparent communication. Clients trust them because they deliver exactly what they
+                                promise, with no hidden costs or surprises. Their integrity ensures every cleaning job
+                                is handled with genuine care and reliability. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-4 ps-3 pe-3 pb-3">
+                    <div class="featured-card">
+                        <div class="featured-card-title">
+                            <div class="featured-card-h3">
+                                <h3>Professional</h3>
+                            </div>
+                            <div class="featured-card-icon"><img src="img/professional.png" alt="icon">
+                            </div>
+                        </div>
+                        <div class="featured-card-info">
+                            <p>
+                                With a focus on professional cleaning solutions, 4EVA Kleen brings trained staff,
+                                punctual service, and attention to detail to every project. Their team uses modern
+                                methods and equipment to guarantee spotless results while respecting your space.
+                                Professionalism is at the core of their reputation. </p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+                <div class="col-12 col-lg-4 ps-3 pe-3 pb-3">
+                    <div class="featured-card">
+                        <div class="featured-card-title">
+                            <div class="featured-card-h3">
+                                <h3>Affordable</h3>
+                            </div>
+                            <div class="featured-card-icon"><img src="img/affordable.png" alt="icon">
+                            </div>
+                        </div>
+                        <div class="featured-card-info">
+                            <p>
+                                4EVA Kleen offers affordable cleaning services that balance cost and quality. Their
+                                competitive rates make premium cleaning accessible to both homes and businesses. By
+                                tailoring packages to fit different budgets, they provide cost‑effective solutions
+                                without compromising on results. </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+    </section>
+
+
+    <!--============================
+            Featured SECTION 
+  ==============================-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--============================
             INFINITE BANNER CAROUSEL 
   ==============================-->
 
@@ -372,217 +549,6 @@
 
 
 
-    <!--============================
-            INTRO SECTION 
-  ==============================-->
-
-    <section class="intro-section section-padding">
-        <div class="container">
-            <div class="row">
-
-
-                <div class="col-12 col-lg-7">
-
-                    <div class="sec-title text-left animate-top pb-4">
-                        <h2> Welcome To <span>4EVA Kleen</span></h2>
-                    </div>
-
-
-                    <div class="intro-txt">
-
-                        <p>4Eva Kleen is a trusted, family-owned cleaning service specialising in professional carpet
-                            steam cleaning, upholstery steam cleaning, tile and grout cleaning, window cleaning, and
-                            end-of-lease cleaning. Based in Perth, we are committed to delivering high-quality cleaning
-                            solutions for residential and commercial properties using professional equipment and proven
-                            cleaning techniques designed to refresh, restore, and maintain your surfaces.
-                        </p>
-                        <p>
-                            As a family-run business, 4Eva Kleen takes pride in providing reliable and honest cleaning
-                            services while building long-term relationships with our clients. We understand that every
-                            property is different, which is why we focus on attention to detail and customer
-                            satisfaction in every job we complete. If our service does not meet your expectations, we
-                            stand behind our work and will return to address any concerns. Our goal is to provide
-                            consistent, thorough, and dependable cleaning services that clients can trust.
-                        </p>
-
-
-                    </div>
-
-                    <div class="text-left mt-2 animate-bottom">
-                        <a href="services.html" class="button-1"> Read More </a>
-                    </div>
-
-                </div>
-
-                <div class="col-12 col-lg-5">
-
-                    <img src="img/owner-bg.png" alt="">
-
-                </div>
-
-
-            </div>
-        </div>
-    </section>
-
-    <!--============================
-            INTRO SECTION 
-  ==============================-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--============================
-            Our Service SECTION 
-  ==============================-->
-
-    <section class="our-services-section section-padding">
-
-        <!-- Cards -->
-        <div class="container services-container">
-
-
-
-            <div class="row">
-
-                <!-- INTRO SERVICE -->
-                <div class="col-12 col-lg-12 service-intro-box mb-4">
-                    <div class="service-intro">
-
-                        <div class="sec-title text-center animate-top ">
-                            <h2> Our <span>Services</span></h2>
-                            <p class="text-white">Call Today To Discuss Your Needs With Us</p>
-                        </div>
-
-                        <div class="text-center mt-2 animate-bottom">
-                            <a href="services.html" class="button-1"> Book Now</a>
-                        </div>
-
-                    </div>
-                </div>
-
-
-
-                <!-- SERVICES -->
-                <div class="col-12 col-lg-12 service-card-box">
-                    <div class="row g-4 justify-content-center">
-
-                        <!-- Card -->
-                        <div class="col-12 col-md-6 col-lg-4 animate-bottom">
-                            <div class="service-card">
-                                <img loading="lazy" src="img/professional-carpet-cleaning1.webp"
-                                    alt="professional carpet cleaning">
-
-                                <div class="card-body text-center">
-                                    <h3>Carpet Steam Cleaning</h3>
-                                    <a href="office-design.html" class="button-2"> Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <!-- Card -->
-                        <div class="col-12 col-md-6 col-lg-4 animate-bottom">
-                            <div class="service-card">
-                                <img loading="lazy" src="img/profesional-upholstery-cleaning2.webp"
-                                    alt="professional upholstery cleaning">
-                                <div class="card-body text-center">
-                                    <h3>Upholstery cleaning</h3>
-                                    <a href="office-fitouts.html" class="button-2"> Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                        <!-- Card -->
-                        <div class="col-12 col-md-6 col-lg-4 animate-bottom">
-                            <div class="service-card">
-                                <img loading="lazy" src="img/professional-tile-grout-cleaning1.webp"
-                                    alt="professional tile grout cleaning">
-                                <div class="card-body text-center">
-                                    <h3>Tile & Grout Cleaning</h3>
-                                    <a href="office-partition.html" class="button-2"> Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Card -->
-                        <div class="col-12 col-md-6 animate-bottom">
-                            <div class="service-card">
-                                <img loading="lazy" src="img/professional-window-cleaning3.webp"
-                                    alt="professional office cleaning">
-                                <div class="card-body text-center">
-                                    <h3>Window Cleaning</h3>
-                                    <a href="office-partition.html" class="button-2"> Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <!-- Card -->
-                        <div class="col-12 col-md-12 col-lg-6 animate-bottom">
-                            <div class="service-card">
-                                <img loading="lazy" src="img/end-of-lease-cleaning2.webp" alt="end of lease cleaning">
-                                <div class="card-body text-center">
-                                    <h3>End of Lease Cleaning</h3>
-                                    <a href="office-partition.html" class="button-2"> Read More</a>
-                                </div>
-                            </div>
-                        </div>
-
-
-
-                    </div>
-                </div>
-
-
-            </div>
-
-
-
-        </div>
-
-    </section>
-
-    <!--============================
-            Our Service SECTION 
-  ==============================-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -590,35 +556,39 @@
             WHY CHOOSE US SECTION 
   ==============================-->
 
-    <section class="hero-why-choose-us-section section-padding">
+    <section class="hero-why-choose-us-section">
         <div class="container why-choose">
 
 
             <!-- Features -->
             <div class="row g-4">
 
-                <div class="col-12 col-md-6 animate-bottom">
-                    <div class="sec-title text-left pb-2 animate-top">
-                        <h2>why <span> Choose Us ?</span></h2>
+                <div class="col-12 col-md-5 animate-bottom">
+
+                    <div class="sec-title text-left animate-top pb-4">
+                        <div class="sub-title text-white"> <img src="img/mop-white.png" alt=""> why choose us?</div>
+                        <h2 class="text-white">perfect solution for your <span>lasting shine</span></h2>
+
                         <p class="text-white">4Eva Kleen has been excelling at cleaning services providing: End of Lease
                             cleaning, Carpet steam cleaning, Tile & Grout steam cleaning, Windows cleaning, Post
                             Construction cleaning, Pre-sale cleaning.</p>
+
                     </div>
 
-                    <div class="text-left mt-5 animate-bottom">
+
+                    <div class="text-left mt-2 animate-bottom">
                         <a href="contact.html" class="button-1"> Contact Us</a>
                     </div>
-
                 </div>
 
 
 
 
-                <div class="col-12 col-md-6 ">
+                <div class="col-12 col-md-7 ">
                     <div class="wc-list-container">
 
                         <div class="wc-list animate-bottom">
-                            <div class="wc-icon">
+                            <div class="wc-icon d-none d-sm-block">
                                 <img loading="lazy" src="img/feedback.png" alt=" feedback icon">
                             </div>
                             <div class="wc-list-txt">
@@ -629,7 +599,7 @@
                         </div>
 
                         <div class="wc-list animate-bottom">
-                            <div class="wc-icon">
+                            <div class="wc-icon d-none d-sm-block">
                                 <img loading="lazy" src="img/insurance.png" alt=" insurance icon">
                             </div>
                             <div class="wc-list-txt">
@@ -643,13 +613,13 @@
 
 
                         <div class="wc-list animate-bottom">
-                            <div class="wc-icon">
+                            <div class="wc-icon d-none d-sm-block">
                                 <img loading="lazy" src="img/experts.png" alt="experts icon">
                             </div>
                             <div class="wc-list-txt">
                                 <h5>Your Trusted Team of Experts</h5>
                                 <p>4EVA KLEEN have backgrounds in end of lease cleaning, window cleaning, carpet and
-                                    tiles steam cleaning with quality rating of 5 stars
+                                    tiles steam cleaning with quality rating of 5 stars.
                                 </p>
                             </div>
                         </div>
@@ -673,6 +643,106 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--============================
+            SERVICES SECTION 
+  ==============================-->
+
+
+    <section class="service-section">
+        <div class="container">
+
+
+            <div class="sec-title text-center animate-top pb-4">
+                <div class="sub-title justify-content-center"> <img src="img/mop.png" alt=""> our services</div>
+                <h2>we provide various <span>cleaning services</span></h2>
+
+            </div>
+
+
+
+            <div class="service-container">
+                <div class="service-list">
+
+                    <a href="carpet-steam-cleaning.html" class="service-item" data-image="Carpet-Stram">
+                        <h3>Carpet Stram Cleaning</h3>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                    <img src="img/professional-carpet-cleaning2.webp" alt="carpet cleaning" class="mobile-image"
+                        id="mobile-img-0">
+
+
+
+                    <a href="upholstery-steam-cleaning.html" class="service-item" data-image="Upholstery-cleaning">
+                        <h3>Upholstery Cleaning</h3>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                    <img src="img/profesional-upholstery-cleaning2.webp" alt="upholstery cleaning" class="mobile-image"
+                        id="mobile-img-1">
+
+
+
+                    <a href="tile-grout-cleaning.html" class="service-item" data-image="tile-grout">
+                        <h3>Tile &amp; Grout Cleaning</h3>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                    <img src="img/professional-tile-grout-cleaning2.webp" alt="tile and grout cleaning"
+                        class="mobile-image" id="mobile-img-2">
+
+
+
+                    <a href="window-cleaning.html" class="service-item" data-image="window-cleaning">
+                        <h3>Window Cleaning</h3>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                    <img src="img/window-cleaning-2.webp" alt="window cleaning" class="mobile-image" id="mobile-img-3">
+
+
+
+                    <a href="end-of-lease-cleaning.html" class="service-item" data-image="end-of-lease">
+                        <h3>End of Lease Cleaning</h3>
+                        <div class="service-arrow"><i class="fa-solid fa-arrow-right"></i></div>
+                    </a>
+                    <img src="img/end-of-lease-cleaning-4.webp" alt="end of lease cleaning" class="mobile-image"
+                        id="mobile-img-4">
+
+                </div>
+
+                <!-- Desktop Image Container -->
+                <div class="service-image-container">
+                    <img src="img/professional-carpet-cleaning2.webp" alt="carpet cleaning" class="service-image active"
+                        data-service="Carpet-Stram">
+                    <img src="img/profesional-upholstery-cleaning2.webp" alt="upholstery cleaning" class="service-image"
+                        data-service="Upholstery-cleaning">
+                    <img src="img/professional-tile-grout-cleaning2.webp" alt="tile and grout cleaning"
+                        class="service-image" data-service="tile-grout">
+                    <img src="img/window-cleaning-2.webp" alt="window cleaning" class="service-image"
+                        data-service="window-cleaning">
+                    <img src="img/end-of-lease-cleaning-4.webp" alt="end of lease cleaning" class="service-image"
+                        data-service="end-of-lease">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--============================
+            SERVICES SECTION 
+  ==============================-->
 
 
 
@@ -695,16 +765,17 @@
 
         <div class="container">
 
-            <div class="sec-title text-center animate-top mb-5">
-                <h2> Our <span>Gallery</span></h2>
-                <p>Explore the work we have done</p>
+
+            <div class="sec-title text-center animate-top pb-4">
+                <div class="sub-title justify-content-center"> <img src="img/mop.png" alt=""> our gallery</div>
+                <h2>check our project <span>quality</span></h2>
+
             </div>
+
 
 
             <div class="mansory-gallery">
                 <div class="column">
-                    <img loading="lazy" src="img/profesional-upholstery-cleaning5.webp"
-                        alt="professional upholstery cleaning">
                     <img loading="lazy" src="img/profesional-upholstery-cleaning6.webp"
                         alt="professional upholstery cleaning">
 
@@ -712,21 +783,15 @@
 
                 <div class="column">
                     <img loading="lazy" src="img/professional-carpet-cleaning5.webp" alt="professional carpet cleaning">
-                    <img loading="lazy" src="img/professional-carpet-cleaning6.webp" alt="professional carpet cleaning">
                 </div>
 
                 <div class="column">
-                    <img loading="lazy" src="img/professional-tile-grout-cleaning4.webp"
-                        alt="professional tile grout cleaning">
                     <img loading="lazy" src="img/professional-carpet-cleaning19.webp"
                         alt="professional carpet cleaning">
                 </div>
 
                 <div class="column">
                     <img loading="lazy" src="img/professional-window-cleaning1.webp" alt="professional window cleaning">
-                    <img loading="lazy" src="img/professional-tile-grout-cleaning3.webp"
-                        alt="professional tile grout cleaning">
-
                 </div>
             </div>
 
@@ -756,6 +821,44 @@
 
 
 
+    <!-- =====================================
+             CTA SECTION
+    ========================================== -->
+
+    <section class="cta-section ">
+        <div class="cta-box container">
+            <div class="cta-content">
+                <h2>Get your first <br> cleaning <span>Today !</span> </h2>
+
+                <div class="col-12 gallery-btn text-left pt-4 animate-bottom">
+
+                    <a href="book-now.html" class="button-1 me-4">
+                        Book Now
+                    </a>
+
+                    <a href="tel:0423646427" class=" button-2"> 0423646427</a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =======================================
+            CTA SECTION
+    ========================================== -->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -773,10 +876,12 @@
         <div class="container">
             <!-- Section Title -->
 
-            <div class="sec-title text-center animate-top mb-5">
-                <h2> Customer <span> Review</span></h2>
-                <p>See what our happy clients have to say</p>
+            <div class="sec-title text-center animate-top pb-4">
+                <div class="sub-title justify-content-center"> <img src="img/mop.png" alt=""> customer review</div>
+                <h2>See what our <span>happy clients says</span></h2>
+
             </div>
+
 
 
             <!-- Testimonials Grid -->
@@ -1019,12 +1124,37 @@
             <div class="row">
 
 
-                <div class="col-12 col-lg-8 faq-container">
+                <div class="col-12 col-lg-5 faq-intro">
+                    <div class="faq-intro-box">
+
+
+                        <div class="sec-title animate-top pb-4">
+                            <div class="sub-title"> <img src="img/mop.png" alt=""> Frequently
+                                Asked Questions</div>
+                            <h2>Answers to your <span>Questions</span></h2>
+
+                        </div>
+
+
+
+
+                        <div class="col-12 text-left gallery-btn pt-2 animate-bottom">
+                            <a href="faq.html" class="button-2">
+                                read more
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="col-12 col-lg-7 faq-container">
 
                     <div class="faq-item active">
                         <button class="faq-question">
                             What cleaning services does 4Eva Kleen provide?
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon"><i class="fa-solid fa-angle-down"></i></span>
                         </button>
                         <div class="faq-answer">
                             4Eva Kleen specialises in professional steam and deep cleaning services for both residential
@@ -1037,7 +1167,7 @@
                     <div class="faq-item">
                         <button class="faq-question">
                             Are you insured and qualified?
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon"><i class="fa-solid fa-angle-down"></i></span>
                         </button>
                         <div class="faq-answer">
                             Yes. 4Eva Kleen is fully insured and trained to provide safe and professional cleaning
@@ -1049,7 +1179,7 @@
                     <div class="faq-item">
                         <button class="faq-question">
                             Do you provide services for both homes and businesses?
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon"><i class="fa-solid fa-angle-down"></i></span>
                         </button>
                         <div class="faq-answer">
                             Yes, we provide cleaning services for residential homes, rental properties, offices, and
@@ -1061,7 +1191,7 @@
                     <div class="faq-item">
                         <button class="faq-question">
                             How long does a cleaning service usually take?
-                            <span class="faq-icon">+</span>
+                            <span class="faq-icon"><i class="fa-solid fa-angle-down"></i></span>
                         </button>
                         <div class="faq-answer">
                             The time required depends on the type of service, the size of the property, and the
@@ -1072,27 +1202,6 @@
                     </div>
 
                 </div>
-
-
-
-                <div class="col-12 col-lg-4 faq-intro">
-                    <div class="faq-intro-box">
-
-                        <div class="sec-title text-center animate-top mb-5">
-                            <h2>Frequently Asked <span> Questions</span></h2>
-                        </div>
-
-                        <div class="col-12 text-center gallery-btn pt-2 animate-bottom">
-                            <a href="faq.html" class="button-2">
-                                read more
-                            </a>
-                        </div>
-
-
-                    </div>
-                </div>
-
-
 
             </div>
         </div>
@@ -1117,29 +1226,6 @@
 
 
 
-    <!-- =====================================
-    Lets Talk 
-    ========================================== -->
-
-    <!-- <section class="lets-talk">
-        <div class="background bg-img bg-fixed section-padding" data-overlay-dark="7"
-            data-background="img/end-of-lease-cleaning3.webp">
-            <div class="container text-center">
-
-                <div class="section-title text-center text-white pb-4 fw-light animate-top">
-                    Are you looking for affordable high quality interior solutions?
-                    Bayside Commercial Interiors Can help. Call today to Request a free quote!
-                </div>
-
-                <a href="contact.html" class="button-1 animate-bottom">REQUEST A QUOTE</a>
-
-            </div>
-        </div>
-    </section> -->
-
-    <!-- =======================================
-    Lets Talk 
-    ========================================== -->
 
 
 
