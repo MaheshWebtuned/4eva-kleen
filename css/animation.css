@@ -1,4 +1,3 @@
-
 /* =====================
    Base Animations
 ===================== */
@@ -12,7 +11,7 @@
     transform: translateY(100px);
 }
 
-.animate-top {
+. {
     transform: translateY(-100px);
 }
 
