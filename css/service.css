@@ -405,6 +405,7 @@ h2 {
 .price-list {
   border-radius: 20px;
   padding: 40px 20px;
+  margin: 10px 0px;
   position: relative;
   background-color: var(--dark-blue);
   overflow: hidden;

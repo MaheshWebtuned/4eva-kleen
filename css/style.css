@@ -2239,8 +2239,8 @@ a.logo {
 /* ======= INFINITE BANNER CAROUSEL ======= */
 
 .slider {
-  Height: 120px;
-  --animationSpeed: 40s;
+  Height: auto;
+  --animationSpeed: 60s;
   overflow: hidden;
   width: 100%;
   height: var(--slideHeight);
@@ -2256,7 +2256,7 @@ a.logo {
 
 .slider .slide {
   flex-shrink: 0;
-  height: 120px;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
