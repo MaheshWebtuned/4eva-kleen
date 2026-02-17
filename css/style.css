@@ -62,7 +62,6 @@
   --black: #000000;
   --white: #FFFFFF;
 
-
 }
 
 
@@ -182,6 +181,9 @@ b {
   font-weight: 300;
   color: var(--white);
 }
+
+
+
 
 /* text field */
 
@@ -309,7 +311,7 @@ input[type="submit"]:hover {
 /* placeholder */
 
 ::-webkit-input-placeholder {
-  color: #999;
+  color: black;
   font-family: 'Roboto Flex', sans-serif;
   font-size: 17px;
   font-weight: 300;
@@ -1131,19 +1133,25 @@ hr {
 
 
 
+.navbar .navbar-nav .nav-link:hover {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary-blue);
+}
+
+
+
 .navbar .navbar-nav .nav-link.nav-color {
   color: var(--white);
 }
 
-.navbar .navbar-nav .nav-link:hover {
-  color: var(--primary-pink);
-}
+
 
 
 .navbar .navbar-nav .active {
-  color: var(--primary-pink) !important;
-  font-weight: 400;
-  background-color: var(--bg-white);
+  color: var(--secondary-blue) !important;
+  font-weight: 600;
+  background-color: transparent;
   padding: 10px 15px;
   margin: 0px 5px;
 }
@@ -1193,8 +1201,8 @@ a.logo {
 }
 
 .nav-scroll .navbar-nav .active {
-  color: var(--primary-pink);
-  font-weight: 400;
+  color: var(--secondary-blue) !important;
+  font-weight: 600;
 }
 
 .nav-scroll .navbar-nav .logo {
@@ -1293,7 +1301,7 @@ a.logo {
 .navbar .dropdown-menu .dropdown:hover>.dropdown-item,
 .navbar .dropdown-menu .dropdown-item.active,
 .navbar .dropdown-menu .dropdown-item:hover {
-  color: var(--primary-pink);
+  color: var(--secondary-blue) !important;
   font-weight: 400;
 
 }
@@ -1391,8 +1399,8 @@ a.logo {
 
 
 .navbar .dropdown-menu .dropdown-item.active {
-  color: #0193CA !important;
-  font-weight: 400 !important;
+  color: var(--secondary-blue) !important;
+  font-weight: 600 !important;
 }
 
 
@@ -1429,7 +1437,6 @@ a.logo {
     background-color: var(--white);
     transition: opacity 0.25s ease, transform 0.25s ease;
     pointer-events: none;
-
   }
 
   /* Invisible hover bridge (IMPORTANT) */
@@ -1485,8 +1492,6 @@ a.logo {
     padding: 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   }
-
-
 
 
   .nav-scroll {
@@ -1558,6 +1563,12 @@ a.logo {
 
   }
 
+  .navbar .navbar-nav .active {
+    color: var(--secondary-blue);
+    font-weight: 600;
+  }
+
+
   .nav-scroll .navbar-collapse .nav-link {
     color: var(--white) !important;
     padding: 5px 0px;
@@ -1585,7 +1596,6 @@ a.logo {
   .navbar .dropdown-menu .dropdown-item {
     color: var(--white);
     padding: 0px;
-    font-size: 16px;
     font-weight: 300;
     line-height: 30px;
 
@@ -2309,7 +2319,6 @@ a.logo {
 /* ======= WHY CHOOSE US SECTION ======= */
 
 
-
 .why-choose {
   border-radius: 20px;
   padding: 60px 40px;
@@ -2317,7 +2326,6 @@ a.logo {
   position: relative;
   background-color: var(--dark-blue);
   overflow: hidden;
-
 }
 
 
@@ -2405,6 +2413,17 @@ a.logo {
     padding: 0px;
     margin: 0px;
   }
+
+  .why-choose-us-section {
+    padding-block-end: 60px 30px;
+  }
+}
+
+@media (max-width:575px) {
+  .why-choose-us-section {
+    padding-block-end: 60px 12px;
+  }
+
 }
 
 /* ======= WHY CHOOSE US SECTION ======= */
@@ -2459,6 +2478,7 @@ a.logo {
 }
 
 .cta-content h2 {
+  font-size: clamp(26px, 7vw, 35px);
   color: var(--white);
   text-transform: capitalize;
 }
@@ -2476,13 +2496,13 @@ a.logo {
 
 @media (max-width:767px) {
   .cta-section {
-    padding: 0px 40px;
+    padding: 0px 30px;
   }
 }
 
 @media (max-width:557px) {
   .cta-section {
-    padding: 0px 20px;
+    padding: 0px 12px;
   }
 }
 
@@ -2919,8 +2939,7 @@ a.logo {
 
   .faq-intro {
     margin-bottom: 20px;
-    position: relative;
-
+    position: static;
   }
 
 }

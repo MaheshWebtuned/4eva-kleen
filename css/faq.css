@@ -117,6 +117,13 @@ h2 {
     color: var(--white);
 }
 
+.breadcrumb-content h1 span{
+    text-transform: lowercase;
+    font-family: 'Boldonse', sans-serif;
+    font-size: clamp(35px, 6vw, 55px);
+    color: var(--white);
+}
+
 .breadcrumb-content p {
     text-transform: capitalize;
     font-family: 'Roboto Flex', sans-serif;
@@ -152,8 +159,6 @@ h2 {
 
 
 
-
-
 @media (max-width:945px) {
     .breadcrumb-content {
         max-width: 900px;
@@ -175,108 +180,17 @@ h2 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-/* contact Section */
-
-
-.contact-item {
-    padding: 40px;
-    border-radius: 20px;
-    align-items: center;
-    border: 1px solid rgba(172, 172, 172, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.3s ease;
-}
-
-
-.contact-item:hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    border-style: none;
-}
-
-
-.contact-icon {
-    width: 80px;
-    height: 80px;
-    aspect-ratio: 1/1;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--secondary-blue);
-}
-
-.contact-icon i {
-    font-size: 30px;
-    color: var(--white);
-}
-
-.contact-contain {
-    text-align: center;
-    margin-top: 20px;
-}
-
-.contact-contain h3 {
-    font-size: 24px;
-    font-family: 'Boldonse', sans-serif;
-    color: var(--dark-blue);
-
-}
-
-
-.contact-contain p {
-    margin: 0px;
-    color: var(--text-gray);
-}
-
-/* contact Section */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* contact Section 2 */
-
-.contact-section-form {
+/* FAQs Accordian Section */
+.contact-faq-section {
     position: relative;
-    overflow: hidden;
 }
 
-.contact-section-form::before {
+.contact-faq-section::before {
     content: "";
     position: absolute;
     inset: 0;
     background-image: url("../img/map.jpg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0.2;
@@ -284,112 +198,33 @@ h2 {
     z-index: 0;
 }
 
-.contact-section-form>* {
+.contact-faq-section>* {
     position: relative;
     z-index: 1;
 }
 
 
-
-
-
-/* Form */
-.form-container {
-    background: transparent;
-}
-
-.contact-section-form .row {
+.faq-intro {
     display: flex;
     align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    object-position: center;
+    height: fit-content;
+
+    position: sticky;
+    top: 150px;
 }
 
 
-input .form-control,
-.form-control,
-.form-select,
-textarea {
-    border-radius: 50px !important;
-    padding: 18.5px 20px;
-    border: 1px solid #ccc;
-    box-shadow: none;
-    color: var(--text-gray);
+@media (max-width:991.9px) {
+
+
+    .faq-intro {
+        margin-bottom: 20px;
+        position: static;
+    }
+
 }
 
-
-
-textarea.form-control {
-    border-radius: 20px !important;
-}
-
-
-
-
-.form-control::placeholder,
-textarea::placeholder {
-    color: #666;
-    opacity: 1;
-}
-
-.form-control:focus,
-.form-select:focus,
-textarea:focus {
-    border-color: none;
-    outline: none;
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, .25);
-}
-
-
-
-
-
-/* contact Section 2 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* map section */
-.map-section {
-    width: 100%;
-    padding-bottom: 20px;
-    overflow: hidden;
-}
-
-
-.map-section iframe {
-    width: 100%;
-    border-radius: 20px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
-
-/* map section */
+/* FAQs Accordian Section */

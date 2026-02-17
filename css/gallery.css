@@ -1,15 +1,19 @@
 /* ======= Typography style ======= */
-
-
 :root {
-    --primary-pink: #ED65A4;
-    --secondary-blue: #39A4F0;
-    --text-gray: #1C1C1C;
-    --light-gray: #E5E5E5;
+    --primary-pink: #E83F8E;
+    --secondary-blue: #153CAF;
+    --dark-blue: #05054f;
+    --text-gray: #67696c;
+    --bg-color: #FAFAF7;
+    --light-gray: #F5F4EE;
     --soft-white: #F9F9F9;
     --black: #000000;
     --white: #FFFFFF;
+
 }
+
+
+
 
 
 
@@ -37,21 +41,30 @@ body {
 }
 
 body {
-    font-family: "Inter", sans-serif;
     color: var(--text-gray);
-    background: var(--white);
+    background: var(--bg-color);
     font-size: 16px;
     overflow-x: hidden;
     width: 100%;
 }
 
+p {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--text-gray);
+}
 
 
-
-
-
-
-
+h1,
+h2 {
+    font-family: 'Boldonse', sans-serif;
+    color: var(--secondary-blue);
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    margin: 0 0 15px 0;
+}
 
 
 
@@ -68,7 +81,7 @@ body {
 /* BreadCrumb Section */
 .breadcrumb-box {
     position: relative;
-    background: url('../img/professional-window-cleaning3.webp') center center / cover no-repeat;
+    background: url('../img/profesional-upholstery-cleaning3.webp') center center / cover no-repeat;
     width: 100%;
     padding: clamp(4rem, 10vw, 8rem) 1rem;
 
@@ -77,7 +90,6 @@ body {
     justify-content: center;
     text-align: center;
     color: var(--white);
-    margin-top: clamp(30px, 10vh, 100px);
 }
 
 .breadcrumb-box::before {
@@ -100,37 +112,46 @@ body {
 
 .breadcrumb-content h1 {
     text-transform: uppercase;
+    font-family: 'Boldonse', sans-serif;
     font-size: clamp(35px, 6vw, 55px);
     color: var(--white);
 }
 
 .breadcrumb-content p {
-    text-transform: uppercase;
+    text-transform: capitalize;
+    font-family: 'Roboto Flex', sans-serif;
     font-size: 16px;
     color: var(--white);
 }
 
+
 .breadcrumb-content a {
-    text-transform: uppercase;
-    font-size: 18px;
-    text-decoration: none;
+    position: relative;
     color: var(--white);
-    padding: 10px 20px;
-    margin: 5px 5px;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #012e5b 40%, #496bff 100%);
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.3s ease;
 }
 
+.breadcrumb-content a:hover {
+    background-size: 100% 2px;
+}
+
+
+
 .breadcrumb-content span {
-    text-transform: uppercase;
-    font-size: 18px;
+    text-transform: capitalize;
     text-decoration: none;
     color: var(--white);
-    padding: 10px 20px;
-    margin: 5px 5px;
-    border-radius: 50px;
-    background: linear-gradient(135deg, #012e5b 40%, #496bff 100%);
 }
+
+
+
+
+
 
 
 @media (max-width:945px) {
@@ -161,45 +182,81 @@ body {
 
 
 
+
+
+
 /* ===== GALLERY SECTION STYLING ===== */
 
 
 .gallery-img {
     cursor: pointer;
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .15);
-    transition: box-shadow .2s;
+    transition: box-shadow 0.2s;
+    border-radius: 20px;
+    aspect-ratio: 8/5;
+    object-fit: cover;
+    object-position: center;
+    transition: all 0.3s ease;
 }
 
 .gallery-img:hover {
-    box-shadow: 0 1rem 1rem rgba(0, 0, 0, .35);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
+
 .lightbox-modal .modal-content {
-    background: rgba(0, 0, 0, .75);
+    background: rgba(0, 0, 0, 0.75);
 }
 
 .lightbox-modal .btn-close {
     position: absolute;
-    top: 1.25rem;
-    right: 1.25rem;
-    filter: invert(1);
-    z-index: 10;
+    top: 2rem;
+    right: 2rem;
+    z-index: 1000;
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+
+
+.lightbox-modal .btn-close i {
+    color: var(--white);
+    font-size: 30px;
+    transition: all 0.3s ease;
+}
+
+
+
+.lightbox-modal .btn-close:hover i {
+    color: var(--secondary-blue);
+}
+
 
 .modal-body {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0;
+    height: 100%;
 }
+
+
 
 .carousel-inner {
     width: 75%;
     margin: auto;
 }
 
+
 .carousel-inner img {
     animation: zoomin 10s linear infinite;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
 }
+
+
 
 @keyframes zoomin {
     0% {
@@ -214,8 +271,6 @@ body {
         transform: scale(1);
     }
 }
-
-
 
 
 /* ===== GALLERY SECTION STYLING ===== */
