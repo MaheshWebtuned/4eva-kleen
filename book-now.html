@@ -303,8 +303,7 @@
 
                 <div class="col-lg-8">
 
-
-                    <!-- Service Selection -->
+                    <!-- Service Selection STEP 1-->
                     <div class="form-section active" id="step1">
                         <h3><i class="fas fa-spray-can"></i> Select Your Services</h3>
 
@@ -675,8 +674,7 @@
 
 
 
-
-                    <!-- Property Details -->
+                    <!-- Property Details STEP 2 -->
                     <div class="form-section" id="step2">
                         <h3><i class="fas fa-building"></i> Property & Job Details</h3>
 
@@ -737,7 +735,7 @@
 
 
 
-                    <!-- Address & Service Area -->
+                    <!-- Address & Service Area STEP 3 -->
                     <div class="form-section" id="step3">
                         <h3><i class="fas fa-map-marker-alt"></i> Service Address</h3>
 
@@ -777,8 +775,7 @@
 
 
 
-
-                    <!-- Date & Time Selection -->
+                    <!-- Date & Time Selection STEP 4-->
                     <div class="form-section" id="step4">
                         <h3><i class="fas fa-calendar"></i> Preferred Date & Time</h3>
 
@@ -820,7 +817,7 @@
 
 
 
-                    <!-- Contact Details -->
+                    <!-- Contact Details STEP 5-->
                     <div class="form-section" id="step5">
                         <h3><i class="fas fa-user"></i> Your Contact Details</h3>
 
@@ -856,7 +853,6 @@
 
 
 
-
                     <!-- Confirmation Message -->
                     <div class="confirmation-message" id="confirmation">
                         <div class="confirmation-icon">
@@ -866,21 +862,17 @@
                         <p class="lead">We've received your booking request and will contact you shortly to confirm your
                             service.</p>
 
-                        <div class="mt-4 p-4 bg-light rounded">
+                        <div class="mt-4 p-4 bg-light ">
                             <h5>Booking Summary</h5>
                             <div id="booking-summary"></div>
                         </div>
 
-                        <p class="mt-4 text-muted">A confirmation email has been sent to your email address.</p>
 
                         <button class="btn button-1 mt-4" onclick="window.location.reload()">Book Another
                             Service</button>
                     </div>
+
                 </div>
-
-
-
-
 
 
 
@@ -901,6 +893,10 @@
                         </div>
                     </div>
                 </div>
+
+
+
+
             </div>
         </div>
     </section>
@@ -1025,6 +1021,11 @@
 
 
 
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script>emailjs.init('MGYEgOwy8VSjCkIyX');</script>
 
 
 
