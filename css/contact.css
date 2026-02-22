@@ -191,7 +191,8 @@ h2 {
 
 
 .contact-item {
-    padding: 40px;
+    padding: 40px 20px;
+    margin: 10px 0px;
     border-radius: 20px;
     align-items: center;
     border: 1px solid rgba(172, 172, 172, 0.5);
@@ -221,7 +222,7 @@ h2 {
 }
 
 .contact-icon i {
-    font-size: 30px;
+    font-size: 25px;
     color: var(--white);
 }
 
@@ -231,7 +232,7 @@ h2 {
 }
 
 .contact-contain h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Boldonse', sans-serif;
     color: var(--dark-blue);
 

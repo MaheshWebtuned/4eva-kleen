@@ -241,19 +241,11 @@ function submitBooking() {
     console.log('Booking submitted:', bookingData);
 }
 
-// FAQ toggle
-function toggleFaq(element) {
-    const answer = element.querySelector('.faq-answer');
-    const icon = element.querySelector('i');
 
-    answer.classList.toggle('show');
 
-    if (answer.classList.contains('show')) {
-        icon.style.transform = 'rotate(180deg)';
-    } else {
-        icon.style.transform = 'rotate(0deg)';
-    }
-}
+
+
+
 
 // Scroll to booking section
 function scrollToBooking() {

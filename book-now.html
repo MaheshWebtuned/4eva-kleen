@@ -5,15 +5,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Your Professional Cleaning Service | 4Eva Kleen Perth</title>
+
+
+    <!-- Google ('Roboto Flex', sans-serif) ('Boldonse', sans-serif) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Boldonse&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet" href="css/style.css">
+
+
+    <!-- bootstrap Icons (icon library) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+
+
+    <!-- Font Awesome (icon library, v6.6.0) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+    <!-- Plugins CSS (third-party libraries styling) -->
+    <link rel="stylesheet" href="css/plugins.css" />
+
+
+
+    <!-- animation stylesheet -->
+    <link rel="stylesheet" href="css/animation.css">
+
+
+
+    <!-- Main site stylesheet -->
+    <link rel="stylesheet" href="css/style.css" />
+
+
+
+    <!-- This Page stylesheet -->
     <link rel="stylesheet" href="css/book-now.css">
-
 
 
 
@@ -22,8 +53,8 @@
 
 
 
-<body>
 
+<body>
 
 
 
@@ -33,13 +64,13 @@
 
     <div class="nav-banner py-2 px-3">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-8 text-center mb-lg-0">
+            <div class="row ">
+                <div class="col-md-8 nav-banner-txt">
                     Welcome to 4EVA Kleen - Honest | Professional | Affordable
                 </div>
 
-                <div class="col-md-4 d-none d-md-block text-center">
-                    <a href="tel:0423646427"> <i class="fa-solid fa-phone-volume"></i> <span> +0423646427</span> </a>
+                <div class="col-md-4 d-none d-md-block nav-banner-call">
+                    <a href="tel:0423646427"> <i class="bi bi-telephone"></i> <span> 0423646427</span> </a>
                 </div>
             </div>
         </div>
@@ -67,9 +98,8 @@
             <!-- Logo -->
             <div class="logo-wrapper">
                 <a class="logo" href="index.html">
-                    <img src="img/logo.png" class="logo-img" alt="" />
+                    <img src="img/logo.png" class="logo-img img-fluid" alt="" />
                 </a>
-                <!-- <a class="logo" href="index"><div class="logo"><img src="img/logo.png" alt=""></div></a> -->
             </div>
 
             <!-- Button -->
@@ -82,18 +112,18 @@
             <!-- Menu -->
             <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
 
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">Services</a>
+                            aria-expanded="false">Services <i class="fa-solid fa-angle-down"></i></a>
 
                         <ul class="dropdown-menu">
 
@@ -124,7 +154,7 @@
                         </ul>
                     </li>
 
-                    <li class="nav-item dropdown">
+                    <li class="nav-item">
                         <a class="nav-link" href="gallery.html">Gallery</a>
                     </li>
 
@@ -136,9 +166,7 @@
                         <a class="nav-link" href="faq.html">FAQs</a>
                     </li>
 
-
-
-                    <li class="nav-item navigation-button">
+                    <li class="nav-item navigation-button d-none d-lg-block">
                         <a href="book-now.html" class="button-1"> Book Now</a>
                     </li>
 
@@ -163,55 +191,63 @@
 
 
 
-    <!-- Hero Section -->
-    <section class="breadcrum-section">
-        <div class="container">
+
+
+
+
+
+
+
+
+    <!--============================
+            BREADCRUMB SECTION 
+  ==============================-->
+
+
+    <section class="breadcrumb-box">
+        <div class="breadcrumb-content">
             <h1>Book Your Professional Cleaning Service</h1>
             <p>Transparent pricing, easy booking, and reliable professional cleaning across Perth.</p>
-
-            <button class=" button-2" onclick="scrollToBooking()">Start Your Booking</button>
-
-
-
-            <div class="trust-badges">
-                <div class="trust-badge">
-                    <i class="fas fa-home"></i>
-                    <span>Family-Owned <br> Business</span>
-                </div>
-                <div class="trust-badge">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Fully Insured</span>
-                </div>
-                <div class="trust-badge">
-                    <i class="fas fa-star"></i>
-                    <span>Satisfaction <br>Guaranteed</span>
-                </div>
-            </div>
         </div>
     </section>
 
+    <!--============================
+            BREADCRUMB SECTION 
+  ==============================-->
 
 
 
 
 
-    <!-- How It Works Section -->
-    <section class="booking-process">
+
+
+
+
+
+
+    <!--============================
+            BOOKING PROCESS SECTION 
+  ==============================-->
+
+    <section class="how-it-works">
         <div class="container">
 
-            <div class="sec-title text-center  mb-5">
-                <h2>how <span> Booking Works</span></h2>
+            <div class="sec-title text-center  pb-4">
+                <h2>How <span>Booking Works</span></h2>
                 <p>Simple, transparent, and stress-free</p>
             </div>
 
 
+
             <div class="steps-container">
+
                 <div class="step-card">
                     <div class="step-number">1</div>
                     <i class="fas fa-list-check"></i>
                     <h4>Choose Your Service</h4>
                     <p>Select from our range of professional cleaning services</p>
                 </div>
+
                 <div class="step-card">
                     <div class="step-number">2</div>
                     <i class="fas fa-home"></i>
@@ -234,6 +270,9 @@
         </div>
     </section>
 
+    <!--============================
+            BOOKING PROCESS SECTION 
+  ==============================-->
 
 
 
@@ -243,106 +282,97 @@
 
 
 
-    <!-- Main Booking Section -->
+
+
+
+    <!--============================
+           MAIN BOOKING SECTION 
+  ==============================-->
+
     <section class="services-section" id="booking">
         <div class="container">
 
-            <div class="sec-title text-center  mb-5">
-                <h2>Book <span> Your Service</span></h2>
+            <div class="sec-title text-center  pb-4">
+                <h2>Book <span>Your Service</span></h2>
                 <p>Select the services you need and get instant pricing</p>
             </div>
 
 
             <div class="row">
-                <div class="col-12 col-lg-8">
+
+
+                <div class="col-lg-8">
+
+
                     <!-- Service Selection -->
                     <div class="form-section active" id="step1">
-
                         <h3><i class="fas fa-spray-can"></i> Select Your Services</h3>
 
-
-
                         <!-- Carpet Steam Cleaning -->
-                        <div class="our-service" data-service="carpet">
+                        <div class="service-card" data-service="carpet">
                             <div class="service-header">
                                 <div class="service-title">
-                                    <span class="service-icon">🧼</span>
+                                    <span class="service-icon">
+                                        <img src="img/carpet-steam-cleaning-icon.png" alt=" carpet cleaning icon">
+                                    </span>
                                     <span>Carpet Steam Cleaning</span>
                                 </div>
                                 <input type="checkbox" class="service-checkbox" id="carpet-check">
                             </div>
-
                             <div class="service-details" id="carpet-details">
                                 <div class="alert-note">
                                     <strong>Minimum call-out fee:</strong> $90
                                 </div>
-                                <div class="pricing-table">
-                                    <div class="price-item">
-                                        <span class="price-label">1 room</span>
-                                        <span class="price-value">$45</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span class="price-label">2 rooms</span>
-                                        <span class="price-value">$90</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span class="price-label">3 rooms</span>
-                                        <span class="price-value">$135</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span class="price-label">4 rooms</span>
-                                        <span class="price-value">$180</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span class="price-label">5 rooms</span>
-                                        <span class="price-value">$225</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span class="price-label">6 rooms</span>
-                                        <span class="price-value">$270</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span class="price-label">7 rooms</span>
-                                        <span class="price-value">$315</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span class="price-label">8 rooms</span>
-                                        <span class="price-value">$360</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span class="price-label">XL room (over 20 sqm)</span>
-                                        <span class="price-value">$60</span>
-                                    </div>
-                                    <div class="price-item">
-                                        <span class="price-label">Staircase</span>
-                                        <span class="price-value">$60</span>
-                                    </div>
-                                </div>
 
                                 <div class="form-group mt-3">
-                                    <label class="form-label">Number of Rooms</label>
-                                    <select class="form-select" id="carpet-rooms">
-                                        <option value="">Select number of rooms</option>
-                                        <option value="1">1 room - $45</option>
-                                        <option value="2">2 rooms - $90</option>
-                                        <option value="3">3 rooms - $135</option>
-                                        <option value="4">4 rooms - $180</option>
-                                        <option value="5">5 rooms - $225</option>
-                                        <option value="6">6 rooms - $270</option>
-                                        <option value="7">7 rooms - $315</option>
-                                        <option value="8">8 rooms - $360</option>
+                                    <label class="form-label">Regular Rooms <span class="text-muted fw-normal">(under 20
+                                            sq metres) — $45 per room</span></label>
+                                    <select class="form-select" id="carpet-regular-rooms"
+                                        onchange="updatePriceSummary()">
+                                        <option value="0">Select number of rooms</option>
+                                        <option value="1">1 room</option>
+                                        <option value="2">2 rooms</option>
+                                        <option value="3">3 rooms</option>
+                                        <option value="4">4 rooms</option>
+                                        <option value="5">5 rooms</option>
+                                        <option value="6">6 rooms</option>
+                                        <option value="7">7 rooms</option>
+                                        <option value="8">8 rooms</option>
                                     </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label class="form-label">XL Rooms <span class="text-muted fw-normal">(above 20 sq
+                                            metres) — $60 per room</span></label>
+                                    <select class="form-select" id="carpet-xl-rooms" onchange="updatePriceSummary()">
+                                        <option value="0">Select number of XL rooms</option>
+                                        <option value="1">1 XL room</option>
+                                        <option value="2">2 XL rooms</option>
+                                        <option value="3">3 XL rooms</option>
+                                        <option value="4">4 XL rooms</option>
+                                        <option value="5">5 XL rooms</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="addon-item">
+                                        <input type="checkbox" id="carpet-staircase" value="60"
+                                            onchange="updatePriceSummary()">
+                                        <label for="carpet-staircase">Staircase — $60</label>
+                                    </div>
                                 </div>
 
                                 <div class="form-group">
                                     <label class="form-label">Add-ons</label>
                                     <div class="addon-item">
-                                        <input type="checkbox" id="carpet-urine" value="50">
-                                        <label for="carpet-urine">Urine treatment - $50</label>
+                                        <input type="checkbox" id="carpet-urine" value="50"
+                                            onchange="updatePriceSummary()">
+                                        <label for="carpet-urine">Urine Treatment — $50</label>
                                     </div>
                                     <div class="addon-item">
-                                        <input type="checkbox" id="carpet-stain" value="35">
-                                        <label for="carpet-stain">Excessive stain removal - $20-$50</label>
+                                        <input type="checkbox" id="carpet-stain" value="35"
+                                            onchange="updatePriceSummary()">
+                                        <label for="carpet-stain">Extensive Stain Removal — $20–$50</label>
                                     </div>
                                 </div>
 
@@ -356,86 +386,180 @@
 
 
                         <!-- Rug Steam Cleaning -->
-                        <div class="our-service" data-service="rug">
+                        <div class="service-card" data-service="rug">
                             <div class="service-header">
                                 <div class="service-title">
-                                    <span class="service-icon">🧽</span>
+                                    <span class="service-icon">
+                                        <img src="img/rug-cleaning.png" alt="rug cleaning icon">
+                                    </span>
                                     <span>Rug Steam Cleaning</span>
                                 </div>
                                 <input type="checkbox" class="service-checkbox" id="rug-check">
                             </div>
                             <div class="service-details" id="rug-details">
                                 <div class="form-group">
-                                    <label class="form-label">Rug Size</label>
-                                    <select class="form-select" id="rug-size">
-                                        <option value="">Select rug size</option>
-                                        <option value="30">Small - $30</option>
-                                        <option value="45">Medium - $45</option>
-                                        <option value="60">Large - $60</option>
+                                    <label class="form-label">Small Rugs <span class="text-muted fw-normal">— $30 per
+                                            rug</span></label>
+                                    <select class="form-select" id="rug-small" onchange="updatePriceSummary()">
+                                        <option value="0">Select number of rugs</option>
+                                        <option value="1">1 rug</option>
+                                        <option value="2">2 rugs</option>
+                                        <option value="3">3 rugs</option>
+                                        <option value="4">4 rugs</option>
+                                        <option value="5">5 rugs</option>
                                     </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Medium Rugs <span class="text-muted fw-normal">— $45 per
+                                            rug</span></label>
+                                    <select class="form-select" id="rug-medium" onchange="updatePriceSummary()">
+                                        <option value="0">Select number of rugs</option>
+                                        <option value="1">1 rug</option>
+                                        <option value="2">2 rugs</option>
+                                        <option value="3">3 rugs</option>
+                                        <option value="4">4 rugs</option>
+                                        <option value="5">5 rugs</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Large Rugs <span class="text-muted fw-normal">— $60 per
+                                            rug</span></label>
+                                    <select class="form-select" id="rug-large" onchange="updatePriceSummary()">
+                                        <option value="0">Select number of rugs</option>
+                                        <option value="1">1 rug</option>
+                                        <option value="2">2 rugs</option>
+                                        <option value="3">3 rugs</option>
+                                        <option value="4">4 rugs</option>
+                                        <option value="5">5 rugs</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Add-ons</label>
+                                    <div class="addon-item">
+                                        <input type="checkbox" id="rug-urine" value="50"
+                                            onchange="updatePriceSummary()">
+                                        <label for="rug-urine">Urine Treatment — $50</label>
+                                    </div>
+                                    <div class="addon-item">
+                                        <input type="checkbox" id="rug-stain" value="35"
+                                            onchange="updatePriceSummary()">
+                                        <label for="rug-stain">Excessive Stain Removal — $20–$50</label>
+                                    </div>
+                                </div>
+                                <div class="alert-note">
+                                    <i class="fas fa-info-circle"></i> Extra chemicals and time required will incur
+                                    extra cost.
                                 </div>
                             </div>
                         </div>
 
 
+
+
                         <!-- Upholstery Cleaning -->
-                        <div class="our-service" data-service="upholstery">
+                        <div class="service-card" data-service="upholstery">
                             <div class="service-header">
                                 <div class="service-title">
-                                    <span class="service-icon">🛋</span>
+                                    <span class="service-icon">
+                                        <img src="img/Upholstery-cleaning-icon.png" alt="upholstery cleaning icon">
+                                    </span>
                                     <span>Upholstery Cleaning</span>
                                 </div>
                                 <input type="checkbox" class="service-checkbox" id="upholstery-check">
                             </div>
                             <div class="service-details" id="upholstery-details">
                                 <div class="form-group">
-                                    <label class="form-label">Select Items</label>
-                                    <div class="addon-item">
-                                        <input type="checkbox" id="armchair" value="80">
-                                        <label for="armchair">Arm chair - $80</label>
+                                    <label class="form-label">Select Items & Quantities</label>
+
+                                    <div class="upholstery-grid">
+                                        <div class="qty-row">
+                                            <span class="qty-label">Arm Chair <span class="qty-price">$80
+                                                    each</span></span>
+                                            <input type="number" class="form-control qty-input custom-qty"
+                                                id="qty-armchair" data-price="80" value="0" min="0"
+                                                oninput="updatePriceSummary()" onchange="updatePriceSummary()">
+                                        </div>
+
+                                        <div class="qty-row">
+                                            <span class="qty-label">2 Seater Sofa <span class="qty-price">$160
+                                                    each</span></span>
+                                            <input type="number" class="form-control qty-input custom-qty"
+                                                id="qty-sofa2" data-price="160" value="0" min="0"
+                                                oninput="updatePriceSummary()" onchange="updatePriceSummary()">
+                                        </div>
+
+                                        <div class="qty-row">
+                                            <span class="qty-label">3 Seater Sofa <span class="qty-price">$180
+                                                    each</span></span>
+                                            <input type="number" class="form-control qty-input custom-qty"
+                                                id="qty-sofa3" data-price="180" value="0" min="0"
+                                                oninput="updatePriceSummary()" onchange="updatePriceSummary()">
+                                        </div>
+
+                                        <div class="qty-row">
+                                            <span class="qty-label">4 Seater Sofa <span class="qty-price">$200
+                                                    each</span></span>
+                                            <input type="number" class="form-control qty-input custom-qty"
+                                                id="qty-sofa4" data-price="200" value="0" min="0"
+                                                oninput="updatePriceSummary()" onchange="updatePriceSummary()">
+                                        </div>
+
+                                        <div class="qty-row">
+                                            <span class="qty-label">5 Seater Sofa <span class="qty-price">$220
+                                                    each</span></span>
+                                            <input type="number" class="form-control qty-input custom-qty"
+                                                id="qty-sofa5" data-price="220" value="0" min="0"
+                                                oninput="updatePriceSummary()" onchange="updatePriceSummary()">
+                                        </div>
+
+                                        <div class="qty-row">
+                                            <span class="qty-label">6 Seater Sofa <span class="qty-price">$240
+                                                    each</span></span>
+                                            <input type="number" class="form-control qty-input custom-qty"
+                                                id="qty-sofa6" data-price="240" value="0" min="0"
+                                                oninput="updatePriceSummary()" onchange="updatePriceSummary()">
+                                        </div>
                                     </div>
-                                    <div class="addon-item">
-                                        <input type="checkbox" id="sofa2" value="160">
-                                        <label for="sofa2">2 seater sofa - $160</label>
-                                    </div>
-                                    <div class="addon-item">
-                                        <input type="checkbox" id="sofa3" value="180">
-                                        <label for="sofa3">3 seater sofa - $180</label>
-                                    </div>
-                                    <div class="addon-item">
-                                        <input type="checkbox" id="sofa4" value="160">
-                                        <label for="sofa4">4 seater sofa - $160</label>
-                                    </div>
-                                    <div class="addon-item">
-                                        <input type="checkbox" id="sofa5" value="220">
-                                        <label for="sofa5">5 seater sofa - $220</label>
-                                    </div>
-                                    <div class="addon-item">
-                                        <input type="checkbox" id="sofa6" value="240">
-                                        <label for="sofa6">6 seater sofa - $240</label>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
 
 
 
+
                         <!-- Mattress Steam Cleaning -->
-                        <div class="our-service" data-service="mattress">
+                        <div class="service-card" data-service="mattress">
                             <div class="service-header">
                                 <div class="service-title">
-                                    <span class="service-icon">🛏</span>
+                                    <span class="service-icon">
+                                        <img src="img/mattress-cleaning.png" alt="mattress cleaning icon">
+                                    </span>
                                     <span>Mattress Steam Cleaning</span>
                                 </div>
                                 <input type="checkbox" class="service-checkbox" id="mattress-check">
                             </div>
                             <div class="service-details" id="mattress-details">
                                 <div class="form-group">
-                                    <label class="form-label">Mattress Size</label>
-                                    <select class="form-select" id="mattress-size">
-                                        <option value="">Select mattress size</option>
-                                        <option value="60">Single mattress - $60</option>
-                                        <option value="80">Double mattress - $80</option>
+                                    <label class="form-label">Single Mattresses <span class="text-muted fw-normal">— $60
+                                            each</span></label>
+                                    <select class="form-select" id="mattress-single" onchange="updatePriceSummary()">
+                                        <option value="0">Select number of mattresses</option>
+                                        <option value="1">1 mattress</option>
+                                        <option value="2">2 mattresses</option>
+                                        <option value="3">3 mattresses</option>
+                                        <option value="4">4 mattresses</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label">Double Mattresses <span class="text-muted fw-normal">— $80
+                                            each</span></label>
+                                    <select class="form-select" id="mattress-double" onchange="updatePriceSummary()">
+                                        <option value="0">Select number of mattresses</option>
+                                        <option value="1">1 mattress</option>
+                                        <option value="2">2 mattresses</option>
+                                        <option value="3">3 mattresses</option>
+                                        <option value="4">4 mattresses</option>
                                     </select>
                                 </div>
                             </div>
@@ -443,21 +567,24 @@
 
 
 
+
                         <!-- Tile & Grout Cleaning -->
-                        <div class="our-service" data-service="tile">
+                        <div class="service-card" data-service="tile">
                             <div class="service-header">
                                 <div class="service-title">
-                                    <span class="service-icon">🧱</span>
+                                    <span class="service-icon">
+                                        <img src="img/tile-grout-cleaning-icon.png" alt="tile and grout cleaning icon">
+                                    </span>
                                     <span>Tile & Grout Cleaning</span>
                                 </div>
                                 <input type="checkbox" class="service-checkbox" id="tile-check">
                             </div>
                             <div class="service-details" id="tile-details">
                                 <div class="form-group">
-                                    <label class="form-label">Area Size (square metres)</label>
+                                    <label class="form-label">Area Size (square metres) <span
+                                            class="text-muted fw-normal">— $5 per square metre</span></label>
                                     <input type="number" class="form-control" id="tile-sqm"
                                         placeholder="Enter square metres" min="1">
-                                    <small class="text-muted">Price: $5 per square metre</small>
                                 </div>
                             </div>
                         </div>
@@ -465,10 +592,12 @@
 
 
                         <!-- Window Cleaning -->
-                        <div class="our-service" data-service="window">
+                        <div class="service-card" data-service="window">
                             <div class="service-header">
                                 <div class="service-title">
-                                    <span class="service-icon">🪟</span>
+                                    <span class="service-icon">
+                                        <img src="img/window-cleaning-icon.png" alt="window cleaning icon">
+                                    </span>
                                     <span>Window Cleaning</span>
                                 </div>
                                 <input type="checkbox" class="service-checkbox" id="window-check">
@@ -492,17 +621,21 @@
 
 
                         <!-- General Cleaning -->
-                        <div class="our-service" data-service="general">
+                        <div class="service-card" data-service="general">
                             <div class="service-header">
                                 <div class="service-title">
-                                    <span class="service-icon">🧹</span>
+                                    <span class="service-icon">
+                                        <img src="img/general-cleaning.png" alt="general cleaning icon">
+                                    </span>
                                     <span>General Cleaning</span>
                                 </div>
                                 <input type="checkbox" class="service-checkbox" id="general-check">
                             </div>
                             <div class="service-details" id="general-details">
                                 <div class="form-group">
-                                    <label class="form-label">Number of Hours Required</label>
+                                    <label class="form-label">Number of Hours Required
+                                        <span class="text-muted fw-normal">— $58 per hour</span>
+                                    </label>
                                     <input type="number" class="form-control" id="general-hours"
                                         placeholder="Enter hours" min="1">
                                     <small class="text-muted">Price: $58 per hour</small>
@@ -513,10 +646,12 @@
 
 
                         <!-- End of Lease Cleaning -->
-                        <div class="our-service" data-service="lease">
+                        <div class="service-card" data-service="lease">
                             <div class="service-header">
                                 <div class="service-title">
-                                    <span class="service-icon">🏠</span>
+                                    <span class="service-icon">
+                                        <img src="img/end-of-lease-icon.png" alt="end of lease cleaning">
+                                    </span>
                                     <span>End of Lease Cleaning</span>
                                 </div>
                                 <input type="checkbox" class="service-checkbox" id="lease-check">
@@ -531,17 +666,15 @@
 
 
 
-
-                        <div class=" text-center gallery-btn pt-2 animate-bottom">
-
-                            <button class="button-2 mt-4" onclick="nextStep(2)">Continue to Property
-                                Details <span><i class="fa-solid fa-arrow-right"></i></span></button>
-
-                        </div>
-
-
-
+                        <button class="btn button-1 w-100 mt-4" onclick="nextStep(2)">Continue to Property
+                            Details</button>
                     </div>
+
+
+
+
+
+
 
                     <!-- Property Details -->
                     <div class="form-section" id="step2">
@@ -585,24 +718,22 @@
                             </div>
                         </div>
 
+
                         <div class="form-group">
                             <label class="form-label">Special Notes or Requirements</label>
                             <textarea class="form-control" id="special-notes" rows="4"
                                 placeholder="Any specific areas of concern or special instructions..."></textarea>
                         </div>
 
-                        <div class="form-group">
-                            <label class="form-label">Upload Photos (Optional)</label>
-                            <input type="file" class="form-control" id="photos" multiple accept="image/*">
-                            <small class="text-muted">Upload photos to help us better understand your needs</small>
-                        </div>
 
                         <div class="d-flex gap-3 mt-4">
-                            <button class="btn btn-outline-secondary" onclick="prevStep(1)">Back</button>
-                            <button class="btn btn-primary-custom flex-grow-1" onclick="nextStep(3)">Continue to
+                            <button class="btn button-1" onclick="prevStep(1)">Back</button>
+                            <button class="btn button-2 flex-grow-1" onclick="nextStep(3)">Continue to
                                 Address</button>
                         </div>
                     </div>
+
+
 
 
 
@@ -636,11 +767,16 @@
                         </div>
 
                         <div class="d-flex gap-3 mt-4">
-                            <button class="btn btn-outline-secondary" onclick="prevStep(2)">Back</button>
-                            <button class="btn btn-primary-custom flex-grow-1" onclick="nextStep(4)">Continue to Date &
+                            <button class="btn button-1" onclick="prevStep(2)">Back</button>
+                            <button class="btn button-2 flex-grow-1" onclick="nextStep(4)">Continue to Date &
                                 Time</button>
                         </div>
                     </div>
+
+
+
+
+
 
                     <!-- Date & Time Selection -->
                     <div class="form-section" id="step4">
@@ -674,11 +810,15 @@
                         </div>
 
                         <div class="d-flex gap-3 mt-4">
-                            <button class="btn btn-outline-secondary" onclick="prevStep(3)">Back</button>
-                            <button class="btn btn-primary-custom flex-grow-1" onclick="nextStep(5)">Continue to Contact
+                            <button class="btn button-1" onclick="prevStep(3)">Back</button>
+                            <button class="btn button-2 flex-grow-1" onclick="nextStep(5)">Continue to Contact
                                 Details</button>
                         </div>
                     </div>
+
+
+
+
 
                     <!-- Contact Details -->
                     <div class="form-section" id="step5">
@@ -704,13 +844,18 @@
                         </div>
 
                         <div class="d-flex gap-3 mt-4">
-                            <button class="btn btn-outline-secondary" onclick="prevStep(4)">Back</button>
-                            <button class="btn btn-primary-custom flex-grow-1" onclick="submitBooking()">Confirm Booking
+                            <button class="btn button-1" onclick="prevStep(4)">Back</button>
+                            <button class="btn button-2 flex-grow-1" onclick="submitBooking()">Confirm Booking
                                 Request</button>
                         </div>
 
                         <p class="text-center mt-3 text-muted">No payment required at this stage.</p>
                     </div>
+
+
+
+
+
 
                     <!-- Confirmation Message -->
                     <div class="confirmation-message" id="confirmation">
@@ -728,7 +873,7 @@
 
                         <p class="mt-4 text-muted">A confirmation email has been sent to your email address.</p>
 
-                        <button class="btn btn-primary-custom mt-4" onclick="window.location.reload()">Book Another
+                        <button class="btn button-1 mt-4" onclick="window.location.reload()">Book Another
                             Service</button>
                     </div>
                 </div>
@@ -737,10 +882,13 @@
 
 
 
+
+
+
                 <!-- Price Summary Sidebar -->
                 <div class="col-lg-4">
                     <div class="price-summary">
-                        <h4><i class="fas fa-receipt"></i> Price Summary</h4>
+                        <h3><i class="fas fa-receipt"></i> Price Summary</h3>
                         <div id="summary-items">
                             <p class="text-muted">Select services to see pricing</p>
                         </div>
@@ -753,121 +901,17 @@
                         </div>
                     </div>
                 </div>
-
-
-
-
             </div>
         </div>
     </section>
 
+    <!--============================
+           MAIN BOOKING SECTION 
+  ==============================-->
 
 
 
 
-
-
-
-
-
-    <!-- FAQ Section -->
-
-    <section class="faq-section section-padding">
-        <div class="container">
-
-
-
-            <div class="row">
-
-
-                <div class="col-12 col-lg-4 faq-title">
-
-                    <div class="sec-title text-center  mb-2">
-                        <h2>Frequently Asked <span> Questions</span></h2>
-                        <p>Still Have Questions? Get in touch.</p>
-                    </div>
-
-
-                    <div class=" text-center gallery-btn pt-2 animate-bottom">
-                        <a href="faq.html" class="button-2">
-                            Contact Us
-                        </a>
-                    </div>
-
-
-                </div>
-
-
-
-
-                <div class="col-12 col-lg-8 faq-container">
-
-                    <div class="faq-item active">
-                        <button class="faq-question">
-                            Do I need to be home during the service?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            While it's not required, we recommend being available for the initial walkthrough. Many
-                            customers
-                            provide access instructions if they can't be present.
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            How is pricing calculated?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            Our pricing is based on the type of service, property size, and specific requirements. All
-                            prices
-                            are transparent and shown upfront during booking. Final pricing may vary slightly based on
-                            property
-                            condition.
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            Is there a satisfaction guarantee?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            Yes! We stand behind our work with a 100% satisfaction guarantee. If you're not happy with
-                            our
-                            service, we'll make it right.
-                        </div>
-                    </div>
-
-                    <div class="faq-item">
-                        <button class="faq-question">
-                            How soon will I be contacted?
-                            <span class="faq-icon">+</span>
-                        </button>
-                        <div class="faq-answer">
-                            We aim to respond to all booking requests within 24 hours, usually much sooner. You'll
-                            receive a
-                            confirmation email and a call to discuss your specific needs.
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-
-
-    <!-- Sticky Bottom Button (Mobile) -->
-    <div class="sticky-bottom">
-        <button class="btn btn-primary-custom w-100" onclick="scrollToBooking()">Get Your Quote</button>
-    </div>
 
 
 
@@ -987,16 +1031,6 @@
 
 
 
-
-
-
-
-    <!--================================================================
-                              JAVA SCRIPT
-  ==========================================================================-->
-
-
-
     <!-- jQuery core library (v3.7.1) -->
     <script src="js/jquery-3.7.1.min.js"></script>
 
@@ -1036,24 +1070,9 @@
     <!-- YouTubePopUp (popup player for YouTube videos) -->
     <script src="js/YouTubePopUp.js"></script>
 
-    <!-- Custom JavaScript (your site-specific scripts) -->
     <script src="js/script.js"></script>
 
-    <!-- BOOKING JavaScript  -->
     <script src="js/booking.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 
 </html>

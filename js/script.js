@@ -79,6 +79,9 @@ $(function () {
         $(".navbar-collapse").removeClass("show");
     });
 
+
+
+
     // Close mobile menu "on click"
     $(function () {
         var navMain = $(".scroll-init");
@@ -104,78 +107,6 @@ $(function () {
 
 
 
-    // Slider & Slider-Fade owlCarousel  
-    $(document).ready(function () {
-        var owl = $('.header .owl-carousel');
-        // Slider owlCarousel - (Inner Page Slider)
-        $('.slider .owl-carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            dots: true,
-            margin: 0,
-            autoplay: false,
-            autoplayTimeout: 5000,
-            nav: true,
-            navText: ['<i class="ti-angle-left" aria-hidden="true"></i>', '<i class="ti-angle-right" aria-hidden="true"></i>'],
-            responsiveClass: true,
-            responsive: {
-                0: {
-                    dots: false,
-                },
-                600: {
-                    dots: false,
-                },
-                1000: {
-                    dots: false,
-                }
-            }
-        });
-        $('.slider-fade .owl-carousel').owlCarousel({
-            items: 1,
-            loop: true,
-            dots: true,
-            margin: 0,
-            autoplay: false,
-            autoplayTimeout: 5000,
-            animateOut: 'fadeOut',
-            nav: true,
-            navText: ['<i class="ti-angle-left" aria-hidden="true"></i>', '<i class="ti-angle-right" aria-hidden="true"></i>']
-        });
-        owl.on('changed.owl.carousel', function (event) {
-            var item = event.item.index - 2; // Position of the current item
-            $('h6').removeClass('animated fadeInUp');
-            $('h1').removeClass('animated fadeInUp');
-            $('h2').removeClass('animated fadeInUp');
-            $('h5').removeClass('animated fadeInUp');
-            $('p').removeClass('animated fadeInUp');
-            $('.car-features').removeClass('animated fadeInRight');
-            $('.button-1').removeClass('animated fadeInUp');
-            $('.button-2').removeClass('animated fadeInUp');
-            $('.owl-item').not('.cloned').eq(item).find('h6').addClass('animated fadeInUp');
-            $('.owl-item').not('.cloned').eq(item).find('h1').addClass('animated fadeInUp');
-            $('.owl-item').not('.cloned').eq(item).find('h2').addClass('animated fadeInUp');
-            $('.owl-item').not('.cloned').eq(item).find('h5').addClass('animated fadeInUp');
-            $('.owl-item').not('.cloned').eq(item).find('p').addClass('animated fadeInUp');
-            $('.owl-item').not('.cloned').eq(item).find('.car-features').addClass('animated fadeInRight');
-            $('.owl-item').not('.cloned').eq(item).find('.button-1').addClass('animated fadeInUp');
-            $('.owl-item').not('.cloned').eq(item).find('.button-2').addClass('animated fadeInUp');
-        });
-    });
-
-
-
-
-
-
-
-
-
-
-
-    // Home services indicator
-
-
-    // Home services indicator
 
 
 
@@ -191,27 +122,6 @@ $(function () {
 
 
 
-    // MagnificPopup
-    $(".img-zoom").magnificPopup({
-        type: "image",
-        closeOnContentClick: !0,
-        mainClass: "mfp-fade",
-        gallery: {
-            enabled: !0,
-            navigateByImgClick: !0,
-            preload: [0, 1]
-        }
-    })
-
-
-    $('.magnific-youtube, .magnific-vimeo, .magnific-custom').magnificPopup({
-        disableOn: 700,
-        type: 'iframe',
-        mainClass: 'mfp-fade',
-        removalDelay: 300,
-        preloader: false,
-        fixedContentPos: false
-    });
 
 
 
@@ -219,15 +129,8 @@ $(function () {
 
 
 
+    // Accordion SECTION
 
-
-
-
-
-
-
-
-    // Accordion
     const faqs = document.querySelectorAll(".faq-item");
 
     faqs.forEach((faq) => {
@@ -238,7 +141,7 @@ $(function () {
             faq.classList.toggle("active");
         });
     });
-
+    // Accordion SECTION
 
 
 

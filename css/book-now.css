@@ -1,14 +1,19 @@
-/* ======= Typography style ======= */
 :root {
-    --primary-pink: #E94290;
-    --secondary-blue: #63B7F1;
-    --secondary-blue: #0F1C2E;
+    --primary-pink: #E83F8E;
+    --secondary-blue: #153CAF;
+    --dark-blue: #05054f;
+    --text-gray: #67696c;
+    --bg-color: #FAFAF7;
+    --light-gray: #F5F4EE;
+    --soft-white: #F9F9F9;
+    --black: #000000;
     --white: #FFFFFF;
-    --light-gray: #F5F8FC;
-    --light-gray: #E6ECF2;
-    --text-gray: #6b7280;
 
 }
+
+
+
+
 
 
 html,
@@ -23,6 +28,7 @@ body {
 
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -34,9 +40,8 @@ body {
 }
 
 body {
-    font-family: "Inter", sans-serif;
     color: var(--text-gray);
-    background: var(--white);
+    background: var(--bg-color);
     font-size: 16px;
     overflow-x: hidden;
     width: 100%;
@@ -46,6 +51,63 @@ body {
 
 
 
+p {
+    font-family: 'Roboto Flex', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--text-gray);
+}
+
+h1 {
+    font-size: 55px;
+}
+
+h2 {
+    font-size: 45px;
+}
+
+h3 {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 27px;
+}
+
+h5 {
+    font-size: 21px;
+}
+
+h6 {
+    font-size: 17px;
+}
+
+
+
+h1,
+h2 {
+    font-family: 'Boldonse', sans-serif;
+    color: var(--secondary-blue);
+    font-weight: 400;
+    line-height: 1.5em;
+    margin-bottom: 5px;
+    margin: 0 0 15px 0;
+}
+
+
+
+
+
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto Flex', sans-serif;
+    color: var(--secondary-blue);
+    font-weight: 400;
+    line-height: 1.5em;
+    margin: 0 0 15px 0;
+}
 
 
 
@@ -53,87 +115,115 @@ body {
 
 
 
-/* Hero Section */
-.breadcrum-section {
-    background-image: url(../img/professional-carpet-cleaning2.webp);
-    color: white;
-    padding: 120px 0 80px;
+
+
+
+
+
+/* BreadCrumb Section */
+.breadcrumb-box {
+    position: relative;
+    background: url('../img/end-of-lease-cleaning-5.webp') center center / cover no-repeat;
+    width: 100%;
+    padding: clamp(4rem, 10vw, 8rem) 1rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    position: relative;
-    object-fit: cover;
-    object-position: center;
-    overflow: hidden;
+    color: var(--white);
 }
 
-.breadcrum-section::after {
-    content: '';
+.breadcrumb-box::before {
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background: rgba(0, 0, 0, 0.7);
-    pointer-events: none;
-}
-
-.breadcrum-section .container {
-    position: relative;
     z-index: 1;
-    margin-top: 40px;
 }
 
-.breadcrum-section h1 {
-    font-size: 50px;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+.breadcrumb-content {
+    max-width: 900px;
+}
+
+
+.breadcrumb-content>* {
+    position: relative;
+    z-index: 2;
+}
+
+.breadcrumb-content h1 {
     text-transform: uppercase;
-    line-height: 1.1;
-    color: white;
+    font-size: clamp(35px, 6vw, 50px);
+    color: var(--white);
 }
 
-.breadcrum-section p {
-    font-size: 1.25rem;
-    opacity: 0.8;
-    font-weight: 400;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+.breadcrumb-content p {
+    text-transform: capitalize;
+    font-size: 16px;
+    color: var(--white);
 }
 
-.trust-badges {
-    display: flex;
-    justify-content: center;
-    gap: 4rem;
-    flex-wrap: wrap;
-    margin-top: 2rem;
-    opacity: 0.9;
+
+.breadcrumb-content a {
+    position: relative;
+    color: var(--white);
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size 0.3s ease;
 }
 
-.trust-badge {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
+.breadcrumb-content a:hover {
+    background-size: 100% 2px;
 }
 
-.trust-badge i {
-    font-size: 1.5rem;
-    color: white;
-    background: navy;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 16px;
+
+
+.breadcrumb-content span {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: var(--white);
 }
 
-.trust-badge span {
-    font-size: 14px;
-    color: white;
-    font-weight: 400;
-    opacity: 0.9;
+
+
+
+
+
+
+@media (max-width:945px) {
+    .breadcrumb-content {
+        max-width: 900px;
+        margin-top: 40px;
+    }
 }
+
+/* BreadCrumb Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -142,9 +232,8 @@ body {
 
 
 /* How It Works Section */
-.booking-process {
-    padding: 100px 0;
-    background: var(--light-gray);
+.how-it-works {
+    padding: 80px 0;
 }
 
 .steps-container {
@@ -155,22 +244,23 @@ body {
 }
 
 .step-card {
-    background: white;
+    background: var(--white);
     padding: 2.5rem 2rem;
     border-radius: 20px;
     text-align: center;
-    border-style: none;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
 }
 
 .step-card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-5px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 
 .step-card i {
     font-size: 2.5rem;
-    color: var(--text-gray);
+    color: var(--secondary-blue);
     margin-bottom: 1.5rem;
     opacity: 0.9;
 }
@@ -193,12 +283,12 @@ body {
     font-size: 1.125rem;
     font-weight: 600;
     margin-bottom: 0.5rem;
-    color: var(--text-gray-primary);
+    color: var(--text-primary);
 }
 
 .step-card p {
     font-size: 0.9rem;
-    color: var(--text-gray-secondary);
+    color: var(--text-secondary);
     margin: 0;
     line-height: 1.5;
 }
@@ -206,30 +296,39 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
 /* Service Selection */
 .services-section {
-    padding: 100px 0;
-    background: white;
+    padding: 80px 0;
 }
 
-.our-service {
+.service-card {
     background: white;
-    border: 1px solid gainsboro;
-    border-radius: 16px;
-    padding: 1.5rem;
-    margin-bottom: 1rem;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 15px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background: rgba(59, 130, 246, 0.03);
+    border: 1px solid rgba(128, 128, 128, 0.2);
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
-.our-service:hover {
+.service-card:hover {
     transform: translateY(-2px);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.our-service.selected {
-    border-color: var(--accent-color);
+.service-card.selected {
     background: linear-gradient(to bottom, rgba(59, 130, 246, 0.02), white);
-    box-shadow: var(--shadow-md);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
 .service-header {
@@ -243,34 +342,43 @@ body {
     display: flex;
     align-items: center;
     gap: 1rem;
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--text-gray-primary);
+    font-family: Boldonse, sans-serif;
+    font-weight: 400;
+    color: var(--text-gray);
+    font-size: clamp(10px 2vh 14px);
 }
 
 .service-icon {
-    font-size: 1.75rem;
+    font-size: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
-    background: #e8f0ff;
-    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    aspect-ratio: 1/1;
+    background: var(--secondary-blue);
+    border-radius: 50px;
+}
+
+
+.service-icon img {
+    width: 30px;
+    height: 30px;
+    filter: invert(1);
 }
 
 .service-checkbox {
     width: 24px;
     height: 24px;
     cursor: pointer;
-    accent-color: rgb(1, 172, 1);
+    accent-color: green;
 }
 
 .service-details {
     display: none;
     margin-top: 2rem;
     padding-top: 2rem;
-    border-top: 1px solid var(--light-gray-color);
+    border-top: 1px solid var(--text-gray);
     animation: slideDown 0.3s ease;
 }
 
@@ -299,29 +407,30 @@ body {
 
 .price-item {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1rem;
-    background: var(--bg-secondary);
+    background: var(--white);
     border-radius: 10px;
     border: 1px solid transparent;
     transition: all 0.2s ease;
+    background-color: var(--bg-color);
 }
 
 .price-item:hover {
-    border-color: var(--light-gray-color);
+    border-color: var(--text-gray);
     background: white;
 }
 
 .price-label {
     font-weight: 500;
-    color: var(--text-gray-secondary);
+    color: var(--text-secondary);
     font-size: 0.9rem;
 }
 
 .price-value {
     font-weight: 700;
-    color: var(--text-gray-primary);
+    color: var(--text-primary);
     font-size: 1rem;
 }
 
@@ -330,7 +439,7 @@ body {
     align-items: center;
     gap: 1rem;
     padding: 1rem;
-    background: var(--bg-secondary);
+    background: var(--white);
     border-radius: 10px;
     margin-bottom: 0.75rem;
     transition: all 0.2s ease;
@@ -339,14 +448,14 @@ body {
 
 .addon-item:hover {
     background: white;
-    border: 1px solid var(--light-gray-color);
+    border: 1px solid var(--text-gray);
     padding: calc(1rem - 1px);
 }
 
 .addon-item input[type="checkbox"] {
     width: 20px;
     height: 20px;
-    accent-color: var(--accent-color);
+    accent-color: var(--secondary-blue);
     cursor: pointer;
 }
 
@@ -354,8 +463,17 @@ body {
     cursor: pointer;
     margin: 0;
     font-size: 0.95rem;
-    color: var(--text-gray-secondary);
+    color: var(--text-secondary);
 }
+
+
+
+
+
+
+
+
+
 
 /* Form Sections */
 .form-section {
@@ -363,8 +481,14 @@ body {
     padding: 3rem;
     background: white;
     border-radius: 20px;
-    border: 1px solid gainsboro;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+@media (max-width:992px) {
+    .form-section {
+        margin-bottom: 20px;
+    }
+
 }
 
 .form-section.active {
@@ -386,9 +510,10 @@ body {
 
 .form-section h3 {
     margin-bottom: 2rem;
-    color: var(--text-gray-primary);
-    font-size: 1.5rem;
-    font-weight: 700;
+    color: var(--text-primary);
+    font-family: 'Boldonse', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
     display: flex;
     align-items: center;
     gap: 0.75rem;
@@ -396,6 +521,7 @@ body {
 
 .form-section h3 i {
     color: var(--secondary-blue);
+    font-size: 1.5rem;
 }
 
 .form-group {
@@ -406,7 +532,7 @@ body {
     display: block;
     margin-bottom: 0.625rem;
     font-weight: 600;
-    color: var(--text-gray-primary);
+    color: var(--text-primary);
     font-size: 0.9rem;
 }
 
@@ -414,42 +540,49 @@ body {
 .form-select {
     width: 100%;
     padding: 14px 16px;
-    border: 1px solid gainsboro;
+    border: 1px solid var(--text-gray);
     border-radius: 12px;
     font-size: 0.95rem;
     transition: all 0.2s ease;
     background: white;
-    color: var(--text-gray-primary);
+    color: var(--text-primary);
 }
-
 
 .form-control:focus,
 .form-select:focus {
     outline: none;
-    border-color: var(--accent-color);
+    border-color: var(--secondary-blue);
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .form-control::placeholder {
-    color: var(--text-gray-muted);
+    color: var(--white);
 }
+
+
+
+
+
+
+
 
 
 
 
 /* Price Summary */
 .price-summary {
+    background: var(--white);
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 2rem;
     border-radius: 20px;
-    border: 1px solid gainsboro;
     position: sticky;
     top: 120px;
-    box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
 }
 
-.price-summary h4 {
-    color: var(--text-gray-primary);
+.price-summary h3 {
+    color: var(--text-primary);
     margin-bottom: 2rem;
+    font-family: 'Boldonse', sans-serif;
     font-size: 1.25rem;
     font-weight: 700;
     display: flex;
@@ -457,7 +590,7 @@ body {
     gap: 0.75rem;
 }
 
-.price-summary h4 i {
+.price-summary h3 i {
     color: var(--secondary-blue);
 }
 
@@ -465,7 +598,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 1rem 0;
-    border-bottom: 1px solid var(--light-gray-color);
+    border-bottom: 1px solid var(--text-gray);
     font-size: 0.95rem;
 }
 
@@ -474,25 +607,25 @@ body {
 }
 
 .summary-item span:first-child {
-    color: var(--text-gray-secondary);
+    color: var(--text-secondary);
 }
 
 .summary-item span:last-child {
     font-weight: 600;
-    color: var(--text-gray-primary);
+    color: var(--text-primary);
 }
 
 .summary-total {
     font-size: 1.5rem;
     font-weight: 700;
-    color: var(--text-gray-primary);
+    color: var(--text-primary);
     margin-top: 1.5rem;
     padding-top: 1.5rem;
-    border-top: 2px solid var(--light-gray-color);
+    border-top: 2px solid var(--text-gray);
 }
 
 .summary-total span:last-child {
-    color: var(--accent-color);
+    color: var(--secondary-blue);
 }
 
 
@@ -501,19 +634,25 @@ body {
 
 
 
-/* Sticky Bottom Button (Mobile) */
-.sticky-bottom {
-    display: none;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: white;
-    padding: 1rem;
-    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    border-top: 1px solid var(--light-gray-color);
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Confirmation Message */
 .confirmation-message {
@@ -529,45 +668,46 @@ body {
 
 .confirmation-icon {
     font-size: 5rem;
-    color: var(--success-color);
+    color: green;
     margin-bottom: 1.5rem;
 }
 
 .confirmation-message h2 {
-    font-size: 2rem;
-    font-weight: 700;
+    font-family: Boldonse, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
     margin-bottom: 1rem;
-    color: var(--text-gray-primary);
+    color: var(--text-primary);
 }
 
 .confirmation-message .lead {
-    font-size: 1.125rem;
-    color: var(--text-gray-secondary);
+    font-size: 18px;
+    color: var(--text-gray);
     margin-bottom: 2rem;
 }
 
 .confirmation-message .bg-light {
-    background: var(--bg-secondary) !important;
-    border: 1px solid var(--light-gray-color);
+    background: var(--white) !important;
+    border: 1px solid var(--text-gray);
 }
 
 .alert-note {
     background: linear-gradient(to right, rgba(59, 130, 246, 0.05), rgba(59, 130, 246, 0.02));
-    border-left: 3px solid var(--light-gray);
+    border-left: 3px solid var(--secondary-blue);
     padding: 1rem 1.25rem;
     margin-top: 1rem;
     border-radius: 8px;
     font-size: 0.9rem;
-    color: var(--text-gray-secondary);
+    color: var(--text-secondary);
 }
 
 .alert-note i {
-    color: var(--light-gray);
+    color: var(--secondary-blue);
     margin-right: 0.5rem;
 }
 
 .alert-note strong {
-    color: var(--text-gray);
+    color: var(--text-primary);
 }
 
 .section-header {
@@ -576,16 +716,16 @@ body {
 }
 
 .section-header h2 {
+    font-family: Boldonse, sans-serif;
     font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--text-gray-primary);
+    color: var(--text-gray);
     margin-bottom: 1rem;
     letter-spacing: -0.02em;
 }
 
 .section-header p {
     font-size: 1.125rem;
-    color: var(--text-gray-secondary);
+    color: var(--text-secondary);
     max-width: 600px;
     margin: 0 auto;
 }
@@ -599,55 +739,20 @@ body {
 
 
 
-.faq-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
 
 
 
-
-
-
-
-/* Button Styles */
-.btn-outline-secondary {
-    border: 1px solid gainsboro;
-    color: var(--text-gray-secondary);
-    background: var(--light-gray);
-    padding: 14px 32px;
-    border-radius: 12px;
-    font-weight: 600;
-    transition: all 0.2s ease;
-}
-
-.btn-outline-secondary:hover {
-    border: 1px solid gainsboro;
-    color: var(--text-gray-primary);
-    background: var(--white);
-
-}
-
-.btn-outline-primary {
-    border: 1px solid gainsboro;
-    color: var(--accent-color);
-    background: white;
-    padding: 14px 32px;
-    border-radius: 12px;
-    font-weight: 600;
-    transition: all 0.2s ease;
-}
-
-.btn-outline-primary:hover {
-    background: var(--accent-color);
-    color: white;
-}
 
 .text-muted {
-    color: var(--text-gray-muted) !important;
+    color: var(--white) !important;
     font-size: 0.875rem;
+}
+
+/* Override: price hints inside form labels must be visible */
+.form-label .text-muted {
+    color: #888 !important;
+    font-size: 0.82rem;
+    font-weight: 400;
 }
 
 small.text-muted {
@@ -655,29 +760,51 @@ small.text-muted {
     margin-top: 0.5rem;
 }
 
-.btn-primary-custom {
-    border: 1px solid gainsboro;
-    color: var(--text-gray-secondary);
-    background: white;
-    padding: 14px 32px;
-    border-radius: 12px;
+/* Quantity Row (Upholstery) */
+.qty-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.75rem 1rem;
+    background: var(--bg-color);
+    border-radius: 10px;
+    margin-bottom: 0.6rem;
+    gap: 1rem;
+}
+
+.upholstery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.upholstery-grid .qty-row {
+    margin-bottom: 0;
+}
+
+.qty-label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: var(--text-gray);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+
+.qty-price {
+    font-size: 0.8rem;
+    color: var(--text-gray);
     font-weight: 600;
-    transition: all 0.2s ease;
-
 }
 
-.btn-primary-custom:hover {
-    border: 1px solid gainsboro;
-    color: var(--text-gray-primary);
-    background: var(--light-gray);
+.qty-select,
+.qty-input {
+    width: 80px !important;
+    padding: 8px 10px !important;
+    flex-shrink: 0;
+    text-align: center;
 }
-
-
-
-
-
-
-
 
 /* Responsive Mobile Styles */
 @media (max-width: 768px) {
@@ -685,27 +812,10 @@ small.text-muted {
         display: block;
     }
 
-    .breadcrum-section {
-        padding: 120px 0 60px;
+    .upholstery-grid {
+        grid-template-columns: 1fr;
     }
 
-    .breadcrum-section h1 {
-        font-size: 2.25rem;
-    }
-
-    .breadcrum-section p {
-        font-size: 1rem;
-    }
-
-    .trust-badges {
-        gap: 2rem;
-    }
-
-    .trust-badge i {
-        width: 50px;
-        height: 50px;
-        font-size: 1.25rem;
-    }
 
     .steps-container {
         grid-template-columns: 1fr;
@@ -716,8 +826,8 @@ small.text-muted {
         grid-template-columns: 1fr;
     }
 
-    .our-service {
-        padding: 1.5rem;
+    .service-card {
+        padding: 10px 20px;
     }
 
     .service-title {
@@ -737,7 +847,7 @@ small.text-muted {
     }
 
     .services-section,
-    .booking-process,
+    .how-it-works,
     .faq-section {
         padding: 60px 0;
     }
@@ -749,9 +859,6 @@ small.text-muted {
 }
 
 @media (max-width: 576px) {
-    .breadcrum-section h1 {
-        font-size: 1.875rem;
-    }
 
     .btn-primary-custom {
         padding: 14px 32px;
@@ -769,54 +876,8 @@ small.text-muted {
     }
 }
 
-/* Utility Classes */
-.d-flex {
-    display: flex;
-}
 
-.gap-3 {
-    gap: 1rem;
-}
 
-.flex-grow-1 {
-    flex-grow: 1;
-}
-
-.w-100 {
-    width: 100%;
-}
-
-.mt-3 {
-    margin-top: 1rem;
-}
-
-.mt-4 {
-    margin-top: 1.5rem;
-}
-
-.mb-3 {
-    margin-bottom: 1rem;
-}
-
-.text-center {
-    text-align: center;
-}
-
-.text-start {
-    text-align: left;
-}
-
-.rounded {
-    border-radius: 16px;
-}
-
-.bg-light {
-    background-color: var(--bg-secondary);
-}
-
-.p-4 {
-    padding: 1.5rem;
-}
 
 /* Smooth Scrolling */
 html {
@@ -825,6 +886,6 @@ html {
 
 /* Focus Visible for Accessibility */
 *:focus-visible {
-    outline: 2px solid var(--accent-color);
+    outline: 2px solid var(--secondary-blue);
     outline-offset: 2px;
 }

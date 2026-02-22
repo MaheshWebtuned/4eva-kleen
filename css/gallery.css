@@ -246,6 +246,7 @@ h2 {
 .carousel-inner {
     width: 75%;
     margin: auto;
+    border-radius: 10px;
 }
 
 
