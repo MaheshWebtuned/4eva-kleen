@@ -686,7 +686,7 @@ hr {
 #preloader {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   background: #000000;
   /* Dark backdrop */
@@ -717,7 +717,6 @@ hr {
   width: 15px;
   height: 15px;
   border-radius: 50%;
-  box-shadow: rgba(255, 255, 255, 0.6) 0px 19px 38px, rgba(255, 255, 255, 0.4) 0px 15px 12px;
   animation: wave 1s infinite ease;
 }
 
