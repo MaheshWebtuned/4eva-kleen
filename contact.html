@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Carpet and Upholstery cleaning service Hillarys Perth | 4Eva Kleen</title>
+    <link rel="canonical" href="https://4evakleen.com.au/contact.html" />
 
 
 
@@ -233,8 +234,8 @@
 
     <section class="breadcrumb-box">
         <div class="breadcrumb-content">
-            <h1>Contact Us</h1>
-            <p><a href="index.html">home </a> / <span>Contact Us</span></p>
+            <h1 class="animate-fade">Contact Us</h1>
+            <p class="animate-fade"><a href="index.html">home </a> / <span>Contact Us</span></p>
         </div>
     </section>
 
@@ -272,7 +273,7 @@
         <div class="container contact-number">
 
 
-            <div class="sec-title text-center  pb-5">
+            <div class="sec-title text-center pb-5 animate-top">
                 <h2>Get In <span>Touch</span></h2>
 
             </div>
@@ -281,7 +282,7 @@
 
             <div class="row">
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 animate-bloom">
                     <div class="contact-item ">
                         <div class="contact-icon"><i class="bi bi-telephone"></i></div>
                         <div class="contact-contain">
@@ -293,7 +294,7 @@
                 </div>
 
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 animate-bloom">
                     <div class="contact-item ">
                         <div class="contact-icon"><i class="bi bi-envelope-at"></i></div>
                         <div class="contact-contain">
@@ -305,7 +306,7 @@
                 </div>
 
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 animate-bloom">
                     <div class="contact-item ">
                         <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
                         <div class="contact-contain">
@@ -317,7 +318,7 @@
                 </div>
 
 
-                <div class="col-12 col-md-6 col-lg-3">
+                <div class="col-12 col-md-6 col-lg-3 animate-bloom">
                     <div class="contact-item ">
                         <div class="contact-icon"><i class="fa-regular fa-clock"></i></div>
                         <div class="contact-contain">
@@ -370,7 +371,7 @@
 
 
                 <!-- Left Title Section -->
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 animate-bloom">
                     <div class="sec-title pb-5">
                         <div class="sub-title">
                             <img src="img/mop.png" alt=""> Contact Us
@@ -380,61 +381,91 @@
                 </div>
 
 
+
+
+
                 <!-- Right Form Section -->
-                <div class="col-12 col-lg-8">
-                    <div class="form-container">
-                        <form>
-                            <!-- Name + Phone -->
-                            <div class="row mb-3">
-                                <div class="col-md-6 ">
-                                    <input type="text" class="form-control" placeholder="Full Name *" required>
-                                </div>
-                                <div class="col-md-6 ">
-                                    <input type="tel" class="form-control" placeholder="Phone Number *" required>
-                                </div>
+                <div class="col-12 col-lg-8 animate-fade">
+                    <form id="contact-form">
+                        <!-- Name + Phone -->
+                        <div class="row mb-3">
+                            <div class="col-md-6">
+                                <input type="text" name="from_name" class="form-control" placeholder="Full Name *"
+                                    required>
                             </div>
-
-                            <!-- Email + Services -->
-                            <div class="row mb-3">
-                                <div class="col-md-6 mb-3 mb-md-0">
-                                    <input type="email" class="form-control" placeholder="Your Email Address *"
-                                        required>
-                                </div>
-                                <div class="col-md-6">
-                                    <select class="form-select" required>
-                                        <option value="">Our Services *</option>
-                                        <option value="design">Carpet Stram Cleaning</option>
-                                        <option value="development">Upholstery Steam Cleaning</option>
-                                        <option value="branding">Tile &amp; Grout Cleaning</option>
-                                        <option value="seo">Window Cleaning</option>
-                                        <option value="seo">End Of Lease Cleaning</option>
-                                    </select>
-                                </div>
+                            <div class="col-md-6">
+                                <input type="tel" name="phone" class="form-control" placeholder="Phone Number *"
+                                    required>
                             </div>
-                            <!-- Message -->
-                            <div class="mb-3">
-                                <textarea class="form-control" rows="5" placeholder="Message Here.."
-                                    required></textarea>
+                        </div>
+
+                        <!-- Email + Services -->
+                        <div class="row mb-3">
+                            <div class="col-md-6 mb-3 mb-md-0">
+                                <input type="email" name="from_email" class="form-control"
+                                    placeholder="Your Email Address *" required>
                             </div>
-
-
-
-                            <!-- Submit Button -->
-
-                            <div type="submit" class="col-12 text-left gallery-btn pt-2 animate-bottom">
-                                <a href="faq.html" class="button-2">
-                                    Send A Message
-                                </a>
+                            <div class="col-md-6">
+                                <select name="service" class="form-select" required>
+                                    <option value="">Our Services *</option>
+                                    <option>Carpet Steam Cleaning</option>
+                                    <option>Upholstery Steam Cleaning</option>
+                                    <option>Tile &amp; Grout Cleaning</option>
+                                    <option>Window Cleaning</option>
+                                    <option>End Of Lease Cleaning</option>
+                                </select>
                             </div>
+                        </div>
 
+                        <!-- Message -->
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control" rows="5" placeholder="Message Here.."
+                                required></textarea>
+                        </div>
 
-                        </form>
-                    </div>
+                        <!-- Submit Button -->
+                        <div class="col-12 pt-2">
+                            <button type="submit" class="button-2">Send A Message</button>
+                        </div>
+                    </form>
                 </div>
+
+
+
+
 
             </div>
         </div>
     </section>
+
+
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+
+            // Initialize EmailJS
+            emailjs.init("MGYEgOwy8VSjCkIyX");
+
+            const form = document.getElementById("contact-form");
+
+            form.addEventListener("submit", function (e) {
+                e.preventDefault();
+
+                emailjs.sendForm("service_mwsi3nd", "template_hwqeq1g", this)
+                    .then(function () {
+                        alert("Message sent successfully!");
+                        form.reset();
+                    }, function (error) {
+                        alert("Failed to send message. Please try again.");
+                        console.log(error);
+                    });
+            });
+
+        });
+    </script>
+
+
 
 
     <!--============================
@@ -482,7 +513,7 @@
 
 
 
-    \
+
 
 
 
@@ -500,7 +531,7 @@
     <section class="over-footer-banner">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-9 over-footer-contain animate-fade">
+                <div class="col-12 col-md-9 over-footer-contain animate-left">
                     Schedule Your Cleaning Service Now
                 </div>
 
@@ -741,6 +772,9 @@
 
     <!-- Magnific Popup (lightbox popup plugin) -->
     <script src="js/jquery.magnific-popup.js"></script>
+
+    <!-- EMAIL JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <!-- YouTubePopUp (popup player for YouTube videos) -->
     <script src="js/YouTubePopUp.js"></script>

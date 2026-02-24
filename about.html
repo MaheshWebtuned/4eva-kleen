@@ -6,26 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Carpet and Upholstery cleaning service Hillarys Perth | 4Eva Kleen</title>
+    <link rel="canonical" href="https://4evakleen.com.au/about.html" />
 
-
-
-
-    <!-- Standard favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-
-    <!-- PNG favicons -->
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-
-    <!-- Apple Touch Icon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
-
-    <!-- Android/Chrome -->
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-chrome-192x192.png">
-
-    <!-- PWA -->
-    <link rel="icon" type="image/png" sizes="512x512" href="favicon/android-chrome-512x512.png">
-    <link rel="manifest" href="favicon/site.webmanifest">
 
 
 
@@ -52,13 +34,11 @@
 
 
     <!-- Plugins CSS (third-party libraries styling) -->
-    <link rel="stylesheet" href="css/plugins.css" />
+    <link rel="preload" href="css/plugins.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 
-
-    <!-- animation stylesheet -->
-    <link rel="stylesheet" href="css/animation.css">
-
+    <!-- Animation stylesheet -->
+    <link rel="preload" href="css/animation.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 
 
     <!-- Main site stylesheet -->
@@ -247,8 +227,8 @@
 
     <section class="breadcrumb-box">
         <div class="breadcrumb-content">
-            <h1>About Us</h1>
-            <p><a href="index.html">home </a> / <span>About Us</span></p>
+            <h1 class="animate-fade">About Us</h1>
+            <p class="animate-fade"><a href="index.html">home </a> / <span>About Us</span></p>
         </div>
     </section>
 
@@ -287,12 +267,12 @@
     <section class="about-intro-section section-padding">
         <div class="container">
 
-            <div class="sec-title text-center  pb-4">
+            <div class="sec-title text-center pb-4 animate-top">
                 <div class="sub-title justify-content-center"> <img src="img/mop.png" alt=""> About 4Eva Kleen</div>
                 <h2>Caring about your <span>cleaning needs</span></h2>
             </div>
 
-            <div class="about-us-container text-center">
+            <div class="about-us-container text-center animate-fade">
                 <p>
                     At 4EVA Kleen, we believe a clean space is the foundation of comfort, health, and peace of mind. As
                     a trusted, family‑owned cleaning service in Western Australia, we specialize in professional carpet
@@ -312,7 +292,7 @@
 
 
 
-                    <div class="row about-featured">
+                    <div class="row about-featured animate-bottom">
                         <div class="col-4 about-featured-icon">
                             <img src="img/honesty.png" alt="">
                         </div>
@@ -325,7 +305,7 @@
 
 
 
-                    <div class="row about-featured two-border">
+                    <div class="row about-featured two-border animate-bottom">
                         <div class="col-4 about-featured-icon">
                             <img src="img/professional.png" alt="">
                         </div>
@@ -339,7 +319,7 @@
 
 
 
-                    <div class="row about-featured">
+                    <div class="row about-featured animate-bottom">
                         <div class="col-4 about-featured-icon">
                             <img src="img/affordable.png" alt="">
                         </div>
@@ -357,7 +337,7 @@
 
 
                 <!-- IMGAE SECTION -->
-                <div class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6 animate-right">
                     <div class=" about-intro-img">
                         <img src="img/profesional-upholstery-cleaning3.webp" alt="">
                     </div>
@@ -565,7 +545,7 @@
         <div class="container">
 
 
-            <div class="sec-title text-center  pb-4">
+            <div class="sec-title text-center pb-4 animate-top">
                 <div class="sub-title justify-content-center"> <img src="img/mop.png" alt=""> our services</div>
                 <h2>we provide various <span>cleaning services</span></h2>
 
@@ -574,7 +554,7 @@
 
 
             <div class="service-container">
-                <div class="service-list">
+                <div class="service-list animate-fade">
 
                     <a href="carpet-steam-cleaning.html" class="service-item" data-image="Carpet-Stram">
                         <h3>Carpet Stram Cleaning</h3>
@@ -621,7 +601,7 @@
                 </div>
 
                 <!-- Desktop Image Container -->
-                <div class="service-image-container">
+                <div class="service-image-container animate-fade">
                     <img src="img/professional-carpet-cleaning2.webp" alt="carpet cleaning" class="service-image active"
                         data-service="Carpet-Stram">
                     <img src="img/profesional-upholstery-cleaning2.webp" alt="upholstery cleaning" class="service-image"
@@ -664,7 +644,7 @@
         <div class="container">
             <!-- Section Title -->
 
-            <div class="sec-title text-center  pb-4">
+            <div class="sec-title text-center pb-4 animate-top">
                 <div class="sub-title justify-content-center"> <img src="img/mop.png" alt=""> customer review</div>
                 <h2>See what our <span>happy clients says</span></h2>
 
@@ -791,7 +771,7 @@
     <section class="over-footer-banner">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-9 over-footer-contain animate-fade">
+                <div class="col-12 col-md-9 over-footer-contain animate-left">
                     Schedule Your Cleaning Service Now
                 </div>
 
@@ -995,47 +975,48 @@
 
 
 
-    <!-- jQuery core library (v3.7.1) -->
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- jQuery core library (must load before plugins) -->
+    <script src="js/jquery-3.7.1.min.js" defer></script>
 
-    <!-- jQuery Migrate (helps older jQuery code work with newer versions) -->
-    <script src="js/jquery-migrate-3.4.1.min.js"></script>
+    <!-- jQuery Migrate (depends on jQuery) -->
+    <script src="js/jquery-migrate-3.4.1.min.js" defer></script>
 
-    <!-- Modernizr (feature detection for HTML5/CSS3) -->
+    <!-- Modernizr (feature detection, should run early) -->
     <script src="js/modernizr-2.6.2.min.js"></script>
+    <!-- Keep without defer/async so it runs immediately before DOM parsing finishes -->
 
-    <!-- ImagesLoaded (detects when images are fully loaded) -->
-    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <!-- ImagesLoaded (depends on jQuery) -->
+    <script src="js/imagesloaded.pkgd.min.js" defer></script>
 
-    <!-- Isotope (filtering, sorting, and layout library) -->
-    <script src="js/jquery.isotope.v3.0.2.js"></script>
+    <!-- Isotope (depends on jQuery + ImagesLoaded) -->
+    <script src="js/jquery.isotope.v3.0.2.js" defer></script>
 
-    <!-- Popper.js (positioning tool, required by Bootstrap tooltips/popovers) -->
-    <script src="js/popper.min.js"></script>
+    <!-- Popper.js (needed before Bootstrap) -->
+    <script src="js/popper.min.js" defer></script>
 
-    <!-- Bootstrap JavaScript (responsive UI components) -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Bootstrap JavaScript (depends on Popper + jQuery) -->
+    <script src="js/bootstrap.min.js" defer></script>
 
-    <!-- ScrollIt (smooth scrolling between page sections) -->
-    <script src="js/scrollIt.min.js"></script>
+    <!-- ScrollIt (depends on jQuery) -->
+    <script src="js/scrollIt.min.js" defer></script>
 
-    <!-- Waypoints (triggers functions when scrolling to elements) -->
-    <script src="js/jquery.waypoints.min.js"></script>
+    <!-- Waypoints (depends on jQuery) -->
+    <script src="js/jquery.waypoints.min.js" defer></script>
 
-    <!-- Owl Carousel (responsive carousel/slider plugin) -->
-    <script src="js/owl.carousel.min.js"></script>
+    <!-- Owl Carousel (depends on jQuery) -->
+    <script src="js/owl.carousel.min.js" defer></script>
 
-    <!-- Stellar.js (parallax scrolling effects) -->
-    <script src="js/jquery.stellar.min.js"></script>
+    <!-- Stellar.js (depends on jQuery) -->
+    <script src="js/jquery.stellar.min.js" defer></script>
 
-    <!-- Magnific Popup (lightbox popup plugin) -->
-    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- Magnific Popup (depends on jQuery) -->
+    <script src="js/jquery.magnific-popup.js" defer></script>
 
-    <!-- YouTubePopUp (popup player for YouTube videos) -->
-    <script src="js/YouTubePopUp.js"></script>
+    <!-- YouTubePopUp (depends on jQuery) -->
+    <script src="js/YouTubePopUp.js" defer></script>
 
-    <!-- Custom JavaScript (your site-specific scripts) -->
-    <script src="js/script.js"></script>
+    <!-- Custom JavaScript (depends on everything above) -->
+    <script src="js/script.js" defer></script>
 
 
 </body>

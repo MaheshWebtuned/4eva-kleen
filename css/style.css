@@ -185,83 +185,7 @@ b {
 
 
 
-/* text field */
 
-button,
-input,
-optgroup,
-select,
-textarea {
-  font-family: 'Roboto Flex', sans-serif;
-}
-
-input[type="password"]:focus,
-input[type="email"]:focus,
-input[type="text"]:focus,
-input[type="file"]:focus,
-input[type="radio"]:focus,
-input[type="checkbox"]:focus,
-textarea:focus {
-  outline: none;
-}
-
-input[type="password"],
-input[type="email"],
-input[type="text"],
-input[type="file"],
-textarea {
-  max-width: 100%;
-  margin-bottom: 15px;
-  padding: 10px 20px;
-  height: auto;
-  background-color: white;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  display: block;
-  width: 100%;
-  line-height: 1.5em;
-  font-family: 'Roboto Flex', sans-serif;
-  font-size: 17px;
-  font-weight: 300;
-  color: #999;
-  background-image: none;
-  border: none;
-  border-radius: 12px;
-  border: 1px solid gainsboro;
-}
-
-input[type="submit"],
-input[type="reset"],
-input[type="button"],
-button {
-  text-shadow: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  line-height: 1.95em;
-  -webkit-transition: background-color 0.15s ease-out;
-  transition: background-color 0.15s ease-out;
-  background: var(--white);
-  border: none;
-}
-
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-button:hover {
-  color: #999;
-  border: none;
-}
-
-select {
-  padding: 10px;
-  border-radius: 5px;
-}
-
-textarea:focus,
-textarea:active,
-textarea::placeholder {
-  color: #999;
-}
 
 table,
 th,
@@ -732,12 +656,12 @@ hr {
 
 .loader span:nth-child(3) {
   background: #e387b2;
-  animation-delay: 0.2s;
+  animation-delay: 0.18s;
 }
 
 .loader span:nth-child(4) {
   background: #eab2cb;
-  animation-delay: 0.3s;
+  animation-delay: 0.26s;
 }
 
 @keyframes wave {
@@ -2421,7 +2345,7 @@ a.logo {
 
 @media (max-width:575px) {
   .why-choose-us-section {
-    padding-block-end: 60px 12px;
+    padding:40px 10px;
   }
 
 }

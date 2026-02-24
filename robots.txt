@@ -1,0 +1,7 @@
+# robots.txt for https://4evakleen.com.au
+
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://4evakleen.com.au/sitemap.xml

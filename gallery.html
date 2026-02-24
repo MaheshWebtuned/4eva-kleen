@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <title>Carpet and Upholstery cleaning service Hillarys Perth | 4Eva Kleen</title>
+    <link rel="canonical" href="https://4evakleen.com.au/gallery.html" />
 
 
 
@@ -234,8 +235,8 @@
 
     <section class="breadcrumb-box">
         <div class="breadcrumb-content">
-            <h1>Gallery</h1>
-            <p><a href="index.html">home </a> / <span>Gallery</span></p>
+            <h1 class="animate-fade">Gallery</h1>
+            <p class="animate-fade"><a href="index.html">home </a> / <span>Gallery</span></p>
         </div>
     </section>
 
@@ -274,102 +275,102 @@
     <section class="photo-gallery section-padding">
         <div class="container">
 
-            <div class="sec-title text-center  pb-5">
+            <div class="sec-title text-center pb-5 animate-top">
                 <div class="sub-title justify-content-center"> <img src="img/mop.png" alt=""> our gallery</div>
                 <h2>check our project <span>quality</span></h2>
             </div>
 
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 gallery-grid">
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/end-of-lease-cleaning-3.webp"
                         alt="Professional End of Lease Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/end-of-lease-cleaning6.jpg"
                         alt="Professional End of Lease Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/end-of-lease-cleaning-2.webp"
                         alt="Professional Upholstery Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/profesional-upholstery-cleaning5.webp"
                         alt="Professional Upholstery Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/profesional-upholstery-cleaning1.webp"
                         alt="Professional Upholstery Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/profesional-upholstery-cleaning6.webp"
                         alt="Professional Upholstery Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-carpet-cleaning2.webp"
                         alt="Professional Carpet Steam Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-carpet-cleaning6.webp"
                         alt="Professional Carpet Steam Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-carpet-cleaning7.webp"
                         alt="Professional Carpet Steam Cleaning">
                 </div>
 
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-carpet-cleaning8.webp"
                         alt="Professional Carpet Steam Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-carpet-cleaning19.webp"
                         alt="Professional Carpet Steam Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-carpet-cleaning5.webp"
                         alt="Professional Carpet Steam Cleaning">
                 </div>
 
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-carpet-cleaning9.jpeg"
                         alt="Professional Carpet Steam Cleaning">
                 </div>
 
 
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-tile-grout-cleaning1.webp"
                         alt="Professional Tile and Grout Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-tile-grout-cleaning2.webp"
                         alt="Professional Tile and Grout Cleaning">
                 </div>
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-tile-grout-cleaning4.webp"
                         alt="Professional Tile and Grout Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-window-cleaning1.webp"
                         alt="Professional Window Cleaning">
                 </div>
 
-                <div class="col">
+                <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-window-cleaning3.webp"
                         alt="Professional Window Cleaning">
                 </div>
@@ -454,10 +455,15 @@
 
             images.forEach((img, index) => {
                 img.addEventListener("click", () => {
+
+                    // Disable lightbox for screens under 768px
+                    if (window.innerWidth < 768) {
+                        return; // Do nothing on mobile
+                    }
+
                     buildCarousel(index);
                     bsModal.show();
 
-                    // 🔥 IMPORTANT: init carousel AFTER modal opens
                     modal.addEventListener("shown.bs.modal", () => {
                         const carouselEl = document.getElementById("lightboxCarousel");
                         new bootstrap.Carousel(carouselEl);
@@ -519,7 +525,7 @@
     <section class="over-footer-banner">
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-9 over-footer-contain animate-fade">
+                <div class="col-12 col-md-9 over-footer-contain animate-left">
                     Schedule Your Cleaning Service Now
                 </div>
 

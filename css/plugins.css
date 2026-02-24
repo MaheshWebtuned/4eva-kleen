@@ -7,7 +7,6 @@
 
 
 /* == Owl.carousel == */
-@import url("plugins/owl.carousel.min.css");
 @import url("plugins/owl.theme.default.min.css");
 
 
@@ -15,4 +14,3 @@
 @import url("plugins/flaticon.css");
 
 
-@import url("plugins/magnific-popup.css");
