@@ -47,12 +47,6 @@ $(function () {
 
 
 
-    // Preloader (make sure jQuery is loaded before this)
-    $(window).on("load", function () {
-        $("#preloader").fadeOut(500);
-        $(".preloader-bg").delay(500).fadeOut(500);
-    });
-
 
 
 
