@@ -195,8 +195,8 @@ h2 {
     margin: 10px 0px;
     border-radius: 20px;
     align-items: center;
-    display: flex;
     background-color: var(--white);
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -291,12 +291,6 @@ h2 {
 }
 
 
-.contact-section-form .row {
-    display: flex;
-    align-items: center;
-}
-
-
 
 
 
@@ -321,6 +315,8 @@ h2 {
     box-shadow: none;
 }
 
+
+
 /* Textarea */
 textarea.form-control {
     height: auto;
@@ -332,6 +328,7 @@ textarea.form-control {
 .form-control:focus,
 .form-select:focus {
     border-color: #1e6bff;
+    /* primary blue */
     box-shadow: 0 0 0 3px rgba(30, 107, 255, 0.08);
 }
 
@@ -339,8 +336,6 @@ textarea.form-control {
 .form-control::placeholder {
     color: #9ca3af;
 }
-
-
 
 /* Full width button on small screens */
 @media (max-width: 576px) {
@@ -374,6 +369,7 @@ textarea.form-control {
     textarea.form-control {
         min-height: 120px;
     }
+
 }
 
 /* Small Mobile */
@@ -397,11 +393,9 @@ textarea.form-control {
     }
 }
 
+
+
 /* contact Section 2 */
-
-
-
-
 
 
 

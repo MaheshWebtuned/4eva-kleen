@@ -205,10 +205,10 @@
 
 
     <section class="breadcrumb-box">
-        <div class="breadcrumb-content ">
-            <h1 class="animate-fade">Book Your Professional Cleaning Service</h1>
-            <p class="animate-fade">Transparent pricing, easy booking, and reliable professional cleaning across Perth.
-            </p>
+        <div class="breadcrumb-content">
+            <h1 class="animate-bottom">Book Your Professional Cleaning Service</h1>
+            <p class="animate-bottom">Transparent pricing, easy booking, and reliable professional cleaning across
+                Perth.</p>
         </div>
     </section>
 
@@ -233,7 +233,7 @@
     <section class="how-it-works">
         <div class="container">
 
-            <div class="sec-title text-center animate-top pb-4">
+            <div class="sec-title text-center animate-bloom pb-4">
                 <h2>How <span>Booking Works</span></h2>
                 <p>Simple, transparent, and stress-free</p>
             </div>
@@ -269,6 +269,7 @@
                     <h4>Confirm & Relax</h4>
                     <p>We'll take care of everything for you</p>
                 </div>
+
             </div>
         </div>
     </section>
@@ -295,7 +296,7 @@
     <section class="services-section" id="booking">
         <div class="container">
 
-            <div class="sec-title text-center animate-top pb-4">
+            <div class="sec-title text-center animate-bloom pb-4">
                 <h2>Book <span>Your Service</span></h2>
                 <p>Select the services you need and get instant pricing</p>
             </div>
@@ -782,28 +783,22 @@
                     <div class="form-section" id="step4">
                         <h3><i class="fas fa-calendar"></i> Preferred Date & Time</h3>
 
-
-                        <div class="row">
-
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label">Preferred Date</label>
-                                    <input type="date" class="form-control" id="preferred-date">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label class="form-label">Preferred Time</label>
-                                    <select class="form-select" id="preferred-time" onchange="toggleCustomTime()">
-                                        <option value="">Select time window</option>
-                                        <option value="morning">Morning (8am - 12pm)</option>
-                                        <option value="afternoon">Afternoon (12pm - 5pm)</option>
-                                        <option value="flexible">Flexible</option>
-                                        <option value="custom">Custom Time</option>
-                                    </select>
-                                </div>
-                            </div>
+                        <div class="form-group">
+                            <label class="form-label">Preferred Date</label>
+                            <input type="date" class="form-control" id="preferred-date">
                         </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Preferred Time</label>
+                            <select class="form-select" id="preferred-time" onchange="toggleCustomTime()">
+                                <option value="">Select time window</option>
+                                <option value="morning">Morning (8am - 12pm)</option>
+                                <option value="afternoon">Afternoon (12pm - 5pm)</option>
+                                <option value="flexible">Flexible</option>
+                                <option value="custom">Custom Time</option>
+                            </select>
+                        </div>
+
                         <div class="form-group" id="custom-time-group" style="display: none;">
                             <label class="form-label">Custom Time Window</label>
                             <input type="text" class="form-control" id="custom-time"

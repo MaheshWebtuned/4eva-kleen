@@ -47,6 +47,12 @@ $(function () {
 
 
 
+    // Preloader (make sure jQuery is loaded before this)
+    $(window).on("load", function () {
+        $("#preloader").fadeOut(600);
+        $(".preloader-bg").delay(600).fadeOut(600);
+    });
+
 
 
 
@@ -155,73 +161,73 @@ $(function () {
     // HOME SERVICES SECTION
 
 
-    // Desktop hover effect
-    if (window.innerWidth > 767) {
-        const serviceItems = document.querySelectorAll('.service-item');
-        const serviceImages = document.querySelectorAll('.service-image');
+        // Desktop hover effect
+        if (window.innerWidth > 767) {
+            const serviceItems = document.querySelectorAll('.service-item');
+            const serviceImages = document.querySelectorAll('.service-image');
 
-        serviceItems.forEach(item => {
-            item.addEventListener('mouseenter', function () {
-                const imageType = this.getAttribute('data-image');
+            serviceItems.forEach(item => {
+                item.addEventListener('mouseenter', function () {
+                    const imageType = this.getAttribute('data-image');
 
-                serviceImages.forEach(img => {
-                    img.classList.remove('active');
+                    serviceImages.forEach(img => {
+                        img.classList.remove('active');
+                    });
+
+                    const targetImage = document.querySelector(`.service-image[data-service="${imageType}"]`);
+                    if (targetImage) {
+                        targetImage.classList.add('active');
+                    }
+
+                    serviceItems.forEach(si => si.classList.remove('active'));
+                    this.classList.add('active');
                 });
-
-                const targetImage = document.querySelector(`.service-image[data-service="${imageType}"]`);
-                if (targetImage) {
-                    targetImage.classList.add('active');
-                }
-
-                serviceItems.forEach(si => si.classList.remove('active'));
-                this.classList.add('active');
             });
-        });
-    } else {
-        // Mobile click to show/hide image
-        const serviceItems = document.querySelectorAll('.service-item');
-        const mobileImages = document.querySelectorAll('.mobile-image');
+        } else {
+            // Mobile click to show/hide image
+            const serviceItems = document.querySelectorAll('.service-item');
+            const mobileImages = document.querySelectorAll('.mobile-image');
 
-        serviceItems.forEach((item, index) => {
-            item.addEventListener('click', function (e) {
-                e.preventDefault();
+            serviceItems.forEach((item, index) => {
+                item.addEventListener('click', function (e) {
+                    e.preventDefault();
 
-                const mobileImg = document.getElementById(`mobile-img-${index}`);
-                const isVisible = mobileImg.style.display === 'block';
+                    const mobileImg = document.getElementById(`mobile-img-${index}`);
+                    const isVisible = mobileImg.style.display === 'block';
 
-                // Hide all images first
-                mobileImages.forEach(img => {
-                    img.style.display = 'none';
-                    img.classList.remove('show');
-                });
+                    // Hide all images first
+                    mobileImages.forEach(img => {
+                        img.style.display = 'none';
+                        img.classList.remove('show');
+                    });
 
-                if (!isVisible) {
-                    // Show the clicked image
-                    mobileImg.style.display = 'block';
-                    setTimeout(() => {
-                        mobileImg.classList.add('show');
-                    }, 10);
+                    if (!isVisible) {
+                        // Show the clicked image
+                        mobileImg.style.display = 'block';
+                        setTimeout(() => {
+                            mobileImg.classList.add('show');
+                        }, 10);
 
-                    // Redirect after showing image
-                    setTimeout(() => {
+                        // Redirect after showing image
+                        setTimeout(() => {
+                            window.location.href = this.getAttribute('href');
+                        }, 1200);
+                    } else {
+                        // If already visible, just redirect
                         window.location.href = this.getAttribute('href');
-                    }, 1200);
-                } else {
-                    // If already visible, just redirect
-                    window.location.href = this.getAttribute('href');
-                }
+                    }
+                });
             });
-        });
-    }
+        }
 
-    // Handle window resize
-    let resizeTimer;
-    window.addEventListener('resize', function () {
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(function () {
-            location.reload();
-        }, 250);
-    });
+        // Handle window resize
+        let resizeTimer;
+        window.addEventListener('resize', function () {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(function () {
+                location.reload();
+            }, 250);
+        });
 
 
 

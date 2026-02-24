@@ -233,8 +233,8 @@
 
     <section class="breadcrumb-box">
         <div class="breadcrumb-content">
-            <h1 class="animate-fade">Contact Us</h1>
-            <p class="animate-fade"><a href="index.html">home </a> / <span>Contact Us</span></p>
+            <h1 class="animate-bottom">Contact Us</h1>
+            <p class="animate-bottom"><a href="index.html">home </a> / <span>Contact Us</span></p>
         </div>
     </section>
 
@@ -272,7 +272,7 @@
         <div class="container contact-number">
 
 
-            <div class="sec-title text-center pb-5 animate-top">
+            <div class="sec-title text-center animate-bottom pb-5">
                 <h2>Get In <span>Touch</span></h2>
 
             </div>
@@ -370,7 +370,7 @@
 
 
                 <!-- Left Title Section -->
-                <div class="col-12 col-lg-4 animate-bloom">
+                <div class="col-12 col-lg-4 animate-bottom">
                     <div class="sec-title pb-5">
                         <div class="sub-title">
                             <img src="img/mop.png" alt=""> Contact Us
@@ -380,11 +380,8 @@
                 </div>
 
 
-
-
-
                 <!-- Right Form Section -->
-                <div class="col-12 col-lg-8 animate-fade">
+                <div class="col-12 col-lg-8 animate-bottom">
                     <form id="contact-form">
                         <!-- Name + Phone -->
                         <div class="row mb-3">
@@ -429,10 +426,6 @@
                     </form>
                 </div>
 
-
-
-
-
             </div>
         </div>
     </section>
@@ -443,8 +436,10 @@
     <script>
         document.addEventListener("DOMContentLoaded", function () {
 
-            // Initialize EmailJS
-            emailjs.init("MGYEgOwy8VSjCkIyX");
+            // Initialize EmailJS (v4 format)
+            emailjs.init({
+                publicKey: "MGYEgOwy8VSjCkIyX"
+            });
 
             const form = document.getElementById("contact-form");
 
@@ -452,19 +447,19 @@
                 e.preventDefault();
 
                 emailjs.sendForm("service_mwsi3nd", "template_hwqeq1g", this)
-                    .then(function () {
+                    .then(function (response) {
+                        console.log("SUCCESS!", response.status, response.text);
                         alert("Message sent successfully!");
                         form.reset();
-                    }, function (error) {
-                        alert("Failed to send message. Please try again.");
-                        console.log(error);
+                    })
+                    .catch(function (error) {
+                        console.log("FAILED...", error);
+                        alert("Error: " + JSON.stringify(error));
                     });
             });
 
         });
     </script>
-
-
 
 
     <!--============================
@@ -772,11 +767,12 @@
     <!-- Magnific Popup (lightbox popup plugin) -->
     <script src="js/jquery.magnific-popup.js"></script>
 
-    <!-- EMAIL JS) -->
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-
     <!-- YouTubePopUp (popup player for YouTube videos) -->
     <script src="js/YouTubePopUp.js"></script>
+
+
+    <!-- EMAILJS -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
     <!-- Custom JavaScript (your site-specific scripts) -->
     <script src="js/script.js"></script>

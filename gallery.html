@@ -234,8 +234,8 @@
 
     <section class="breadcrumb-box">
         <div class="breadcrumb-content">
-            <h1 class="animate-fade">Gallery</h1>
-            <p class="animate-fade"><a href="index.html">home </a> / <span>Gallery</span></p>
+            <h1 class="animate-bottom">Gallery</h1>
+            <p class="animate-bottom"><a href="index.html">home </a> / <span>Gallery</span></p>
         </div>
     </section>
 
@@ -274,7 +274,7 @@
     <section class="photo-gallery section-padding">
         <div class="container">
 
-            <div class="sec-title text-center pb-5 animate-top">
+            <div class="sec-title text-center animate-bloom pb-5">
                 <div class="sub-title justify-content-center"> <img src="img/mop.png" alt=""> our gallery</div>
                 <h2>check our project <span>quality</span></h2>
             </div>
@@ -342,13 +342,10 @@
                         alt="Professional Carpet Steam Cleaning">
                 </div>
 
-
                 <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-carpet-cleaning9.jpeg"
                         alt="Professional Carpet Steam Cleaning">
                 </div>
-
-
 
                 <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-tile-grout-cleaning1.webp"
@@ -359,6 +356,7 @@
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-tile-grout-cleaning2.webp"
                         alt="Professional Tile and Grout Cleaning">
                 </div>
+
                 <div class="col animate-bloom">
                     <img class="gallery-img img-fluid" loading="lazy" src="img/professional-tile-grout-cleaning4.webp"
                         alt="Professional Tile and Grout Cleaning">
@@ -455,7 +453,7 @@
             images.forEach((img, index) => {
                 img.addEventListener("click", () => {
 
-                    // Disable lightbox for screens under 768px
+                    // Disable lightbox for screens under 767px
                     if (window.innerWidth < 768) {
                         return; // Do nothing on mobile
                     }

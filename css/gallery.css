@@ -204,7 +204,7 @@ h2 {
 
 
 .lightbox-modal .modal-content {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.75);
 }
 
 .lightbox-modal .btn-close {
@@ -253,7 +253,7 @@ h2 {
 .carousel-inner img {
     animation: zoomin 10s linear infinite;
     aspect-ratio: 16/9;
-    object-fit: contain;
+    object-fit: cover;
     object-position: center;
 }
 
@@ -274,11 +274,11 @@ h2 {
 }
 
 
+
 @media (max-width: 767px) {
     .gallery-img {
         cursor: default;
     }
 }
-
 
 /* ===== GALLERY SECTION STYLING ===== */

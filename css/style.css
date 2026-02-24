@@ -186,7 +186,6 @@ b {
 
 
 
-
 table,
 th,
 tr,
@@ -656,12 +655,12 @@ hr {
 
 .loader span:nth-child(3) {
   background: #e387b2;
-  animation-delay: 0.18s;
+  animation-delay: 0.2s;
 }
 
 .loader span:nth-child(4) {
   background: #eab2cb;
-  animation-delay: 0.26s;
+  animation-delay: 0.3s;
 }
 
 @keyframes wave {
@@ -2338,12 +2337,6 @@ a.logo {
     margin: 0px;
   }
 
-  .why-choose-us-section {
-    padding-block-end: 60px 30px;
-  }
-}
-
-@media (max-width:575px) {
   .why-choose-us-section {
     padding: 40px 10px;
   }
